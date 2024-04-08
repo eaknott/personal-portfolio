@@ -4,6 +4,8 @@ function Contact() {
         <div className="contact-text">
             <h1>Get in Touch</h1>
             <p>If you would like to say hello or learn more about my experience, you can reach me by email, LinkedIn, or drop a message here. I will get back to you as soon as I can.</p>
+            <br />
+            <p>My email: <span className="contact-email">emilyknott.dev@gmail.com</span></p>
         </div>
       <form>
         <div className="form-group">

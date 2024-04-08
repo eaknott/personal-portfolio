@@ -38,6 +38,7 @@ body, html {
 }
 
 /* HEADER */
+
 .header-container {
   background-color: var(--secondary);
   height: 10vh;
@@ -78,6 +79,7 @@ body, html {
 }
 
 /* PAGES */
+
 .home, 
 .about, 
 .projects, 
@@ -94,6 +96,7 @@ body, html {
 }
 
 /* HOME PAGE */
+
 h1 {
   color: var(--light);
   margin: 0 auto 2.5rem 2rem;
@@ -132,9 +135,12 @@ img {
   font-size: 1.1.5rem;
   line-height: 2rem;
   text-align: justify;
+  width: 60vw;
+  min-width: 450px;
 }
 
 /* SKILLS PAGE */
+
 .skills h1 {
   text-align: center;
 }
@@ -149,6 +155,7 @@ img {
 }
 
 /* CONTACT PAGE */
+
 .contact {
   display: flex;
   flex-direction: row;
@@ -165,6 +172,10 @@ img {
   min-width: 20rem;
   font-size: 1.1rem;
   line-height: 2rem;
+}
+
+.contact-email {
+  color: #cccccc;
 }
 
 form {
@@ -231,6 +242,7 @@ button:hover {
 }
 
 /* FOOTER */
+
 .footer-container {
   background-color: var(--secondary);
   width: 100vw;
