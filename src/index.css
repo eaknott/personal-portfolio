@@ -115,7 +115,7 @@ p {
   margin: 0 auto 1.5rem 2rem;
 }
 
-img {
+.home-img img {
   border-radius: 100%;
   margin: auto 3rem 3rem auto;
   box-shadow: 5px 5px 15px var(--secondary);
@@ -139,6 +139,13 @@ img {
   text-align: justify;
   width: 60vw;
   min-width: 450px;
+}
+
+/* PROJECTS PAGE */
+
+.project-thumbnail img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
 }
 
 /* SKILLS PAGE */
