@@ -129,7 +129,7 @@ img {
   text-align: center;
 }
 .about p {
-  font-size: 1.1rem;
+  font-size: 1.1.5rem;
   line-height: 2rem;
   text-align: justify;
 }
@@ -239,7 +239,29 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 2rem;
-  letter-spacing: 3rem;
+}
+
+.footer-links {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-icon {
+  height: 1.5rem;
+  width: 2rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--tertiary);
+}
+
+.footer-links a:hover {
+  color: #eeeeee;
+}
+
+.footer-links a:active {
+  color: var(--light);
 }
