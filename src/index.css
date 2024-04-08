@@ -31,6 +31,7 @@
 }
 
 body, html {
+  background-image: url("background-shapes.jpg");
   background-color: var(--primary);
   height: 100vh;
   width: 100vw;
@@ -71,6 +72,7 @@ body, html {
 .header-container a:hover {
   color: #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
+  transition: 0.25s;
 }
 
 .header-container a:active {
@@ -241,6 +243,10 @@ button:hover {
   cursor: pointer;
 }
 
+button:active {
+  background-color: #cccccc;
+}
+
 /* FOOTER */
 
 .footer-container {
@@ -272,6 +278,7 @@ button:hover {
 
 .footer-links a:hover {
   color: #eeeeee;
+  transition: 0.5s;
 }
 
 .footer-links a:active {
