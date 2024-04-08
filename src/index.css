@@ -99,13 +99,13 @@ body, html {
 
 /* HOME PAGE */
 
-h1 {
+.home h1 {
   color: var(--light);
   margin: 0 auto 2.5rem 2rem;
   letter-spacing: 0.09rem;
 }
 
-p {
+.home p {
   color: var(--tertiary);
   font-weight: bold;
   font-size: 1.5rem;

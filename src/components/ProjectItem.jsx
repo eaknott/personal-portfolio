@@ -2,7 +2,7 @@ import houseMarketplaceThumbnail from '../assets/thumbnails/house-marketplace-th
 
 function ProjectItem() {
   return (
-    <div className="projects">
+    <div>
         <div className="project-item">
             <div className="project-thumbnail">
                 <img src={houseMarketplaceThumbnail} alt="house marketplace app" width="250px" />
