@@ -90,7 +90,6 @@ body, html {
 .contact {
   color: var(--light);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
@@ -123,6 +122,8 @@ body, html {
   margin: auto 3rem 3rem auto;
   box-shadow: 5px 5px 15px var(--secondary);
   opacity: 0.85;
+  height: 18rem;
+  width: 18rem;
 }
 
 .home {
@@ -267,13 +268,6 @@ body, html {
 
 /* CONTACT PAGE */
 
-.contact h1 {
-  text-align: right;
-  color: var(--light);
-  margin: 0 auto 2.5rem 2rem;
-  letter-spacing: 0.09rem;
-}
-
 .contact {
   display: flex;
   flex-direction: row;
@@ -283,6 +277,13 @@ body, html {
 
 .contact-text {
   text-align: right;
+}
+
+.contact h1 {
+  text-align: right;
+  color: var(--light);
+  margin: 0 auto 2.5rem 2rem;
+  letter-spacing: 0.09rem;
 }
 
 .contact p {
@@ -406,4 +407,104 @@ button:active {
 
 .footer-links a:active {
   color: var(--light);
+}
+
+/* SMALLER SCREENS */
+
+@media only screen and (max-width: 1024px) {
+  .header-container ul {
+    margin: 0 1.8rem;
+  }
+  .header-container li {
+    font-size: 1.5rem;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .home-text {
+    text-align: center;
+  }
+  .home h1 {
+    margin: 3rem 0;
+    font-size: 3rem;
+  }
+  .home p {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .home-img img {
+    margin: 0;
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .about h1, 
+  .projects-header h1, 
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .about p {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 3.2rem;
+  }
+  .contact {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .contact h1,
+  .contact p {
+    text-align: center;
+  }
+  .contact p {
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 70vw;
+  }
+  .contact-email {
+    font-size: 1.5rem;
+  }
+  .contact-text :nth-child(4) {
+    font-size: 1.5rem;
+  }
+  .form-group {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .form-group label {
+    margin-left: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.4rem;
+  }
+  input {
+    margin-bottom: 1rem;
+    height: 2.5rem;
+  }
+  input,
+  textarea {
+    width: 30rem;
+    font-size: 1.1rem;
+  }
+  button {
+    height: 2.5rem;
+    width: 12rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .footer-links {
+    width: 700px;
+  }
+  .footer-icon {
+    height: 2.5rem;
+    width: 3rem;
+  }
 }
