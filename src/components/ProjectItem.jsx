@@ -1,11 +1,40 @@
-import houseMarketplaceThumbnail from '../assets/thumbnails/house-marketplace-thumbnail.jpg'
 
-function ProjectItem() {
+function ProjectItem({ thumbnail, title, alt, liveUrl, codeUrl, technologies }) {
   return (
     <div>
         <div className="project-item">
             <div className="project-thumbnail">
-                <img src={houseMarketplaceThumbnail} alt="house marketplace app" width="250px" />
+                <img src={thumbnail} alt={alt} width="200px" />
+            </div>
+            <div className="project-text">
+                <h1>{title}</h1>
+                <div className="project-description">
+                    {
+                        technologies.map((tech) => (
+                            <p>{tech}</p>
+                        ))
+                    }
+                </div>
+                <div className="project-buttons">
+                    <a 
+                        href={liveUrl} 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <button className="btn-live">
+                            View Project
+                        </button>
+                    </a>
+                    <a 
+                        href={codeUrl} 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <button className="btn-code">
+                            View Code
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

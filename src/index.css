@@ -143,9 +143,61 @@ body, html {
 
 /* PROJECTS PAGE */
 
+.project-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 3rem 0 3rem;
+  height: 25rem;
+}
+
 .project-thumbnail img {
   border-radius: 10px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 3px 3px 10px #bbbbbb;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-text h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #dddddd;
+  margin: 1rem 0;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  line-height: 2rem;
+  width: 23rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--tertiary);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.project-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.5rem 0;
 }
 
 /* SKILLS PAGE */
