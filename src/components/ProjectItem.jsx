@@ -11,11 +11,13 @@ function ProjectItem({
   return (
     <div>
         <div className="project-item">
-            <div className="project-thumbnail">
+            <a href={liveUrl} target="_blank" rel="noreferrer" className="project-thumbnail">
                 <img src={thumbnail} alt={alt} width="200px" />
-            </div>
+            </a>
             <div className="project-text">
-                <h1>{title}</h1>
+                <a href={liveUrl} target="_blank" rel="noreferrer">
+                    <h1>{title}</h1>
+                </a>
                 <div className="project-description">
                     {
                         technologies.map((tech) => (
