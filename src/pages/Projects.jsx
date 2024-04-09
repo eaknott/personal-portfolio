@@ -1,6 +1,8 @@
 import ProjectItem from "../components/ProjectItem"
 import houseMarketplaceThumbnail from '../assets/thumbnails/house-marketplace-thumbnail.jpg'
 import githubFinderThumbnail from '../assets/thumbnails/github-finder-thumbnail.jpg'
+import supportDeskThumbnail from '../assets/thumbnails/support-desk-thumbnail.jpg'
+import faqAccordionThumbnail from '../assets/thumbnails/faq-accordion-thumbnail.jpg'
 
 function Projects() {
   return (
@@ -24,6 +26,22 @@ function Projects() {
             liveUrl="https://github-finder-app-navy-theta.vercel.app/" 
             codeUrl="https://github.com/eaknott/github-finder-app" 
             technologies={["React", "GitHub API", "TailwindCSS", "DaisyUI"]}
+          />
+          <ProjectItem 
+            thumbnail={supportDeskThumbnail} 
+            title="Support Desk App" 
+            alt="support desk app" 
+            liveUrl="https://support-desk-app-yfbd.onrender.com/" 
+            codeUrl="https://github.com/eaknott/support-desk-app" 
+            technologies={["MERN full-stack", "Redux", "React Router 6", "React Toastify"]}
+          />
+          <ProjectItem 
+            thumbnail={faqAccordionThumbnail} 
+            title="FAQ Accordion" 
+            alt="FAQ accordion page" 
+            liveUrl="https://eaknott.github.io/faq-accordion/" 
+            codeUrl="https://github.com/eaknott/faq-accordion" 
+            technologies={["JavaScript", "HTML", "CSS"]}
           />
         </div>
     </div>
