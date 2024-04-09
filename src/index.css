@@ -47,6 +47,7 @@ body, html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
 }
 
 .header-container ul {
@@ -95,6 +96,8 @@ body, html {
   height: 80vh;
   width: 100vw;
   font-family: 'Fira Sans', Helvetica, sans-serif;
+  position: relative;
+  top: 10vh;
 }
 
 /* HOME PAGE */
@@ -132,20 +135,33 @@ body, html {
 
 .about h1 {
   text-align: center;
+  color: var(--light);
+  margin: 0 auto 2.5rem 2rem;
+  letter-spacing: 0.09rem;
 }
+
 .about p {
-  font-size: 1.1.5rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   text-align: justify;
   width: 60vw;
   min-width: 450px;
+  color: var(--tertiary);
+  font-weight: bold;
+  letter-spacing: 0.075rem;
+  margin: 0 auto 1.5rem 2rem;
 }
 
 /* PROJECTS PAGE */
 
+.projects-header {
+  position: fixed;
+  top: 15vh;
+}
 .project-items {
   display: flex;
   flex-direction: row;
+  margin-left: 200rem;
 }
 
 .project-item {
@@ -154,7 +170,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   margin: 3rem 3rem 0 3rem;
-  height: 25rem;
+  height: 20rem;
 }
 
 .project-thumbnail img {
@@ -162,12 +178,32 @@ body, html {
   box-shadow: 3px 3px 10px #bbbbbb;
 }
 
+.project-thumbnail img:hover {
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px var(--light);
+}
+
+.project-thumbnail img:active {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--light);
+  transform: translate(2px, 2px);
+}
+
+
 .project-text {
   display: flex;
   flex-direction: column;
   height: 12rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.project-text a {
+  text-decoration: none;
+}
+
+.project-text h1:hover {
+  color: var(--light);
 }
 
 .project-text h1 {
@@ -190,7 +226,6 @@ body, html {
   font-size: 1.1rem;
 }
 
-
 .project-buttons {
   display: flex;
   flex-direction: row;
@@ -204,6 +239,21 @@ body, html {
 
 .skills h1 {
   text-align: center;
+  color: var(--light);
+  margin: 0 auto 2.5rem 2rem;
+  letter-spacing: 0.09rem;
+}
+
+.skills p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: justify;
+  width: 60vw;
+  min-width: 450px;
+  color: var(--tertiary);
+  font-weight: bold;
+  letter-spacing: 0.075rem;
+  margin: 0 auto 1.5rem 2rem;
 }
 
 .skills a {
@@ -216,6 +266,13 @@ body, html {
 }
 
 /* CONTACT PAGE */
+
+.contact h1 {
+  text-align: right;
+  color: var(--light);
+  margin: 0 auto 2.5rem 2rem;
+  letter-spacing: 0.09rem;
+}
 
 .contact {
   display: flex;
@@ -233,6 +290,11 @@ body, html {
   min-width: 20rem;
   font-size: 1.1rem;
   line-height: 2rem;
+  color: var(--tertiary);
+  font-weight: bold;
+  letter-spacing: 0.075rem;
+  margin: 0 auto 1.5rem 2rem;
+  text-align: right;
 }
 
 .contact-email {
@@ -316,6 +378,8 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer-links {
