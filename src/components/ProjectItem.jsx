@@ -1,5 +1,13 @@
+import { v4 as uuidv4 } from 'uuid'
 
-function ProjectItem({ thumbnail, title, alt, liveUrl, codeUrl, technologies }) {
+function ProjectItem({ 
+    thumbnail, 
+    title, 
+    alt, 
+    liveUrl, 
+    codeUrl, 
+    technologies 
+}) {
   return (
     <div>
         <div className="project-item">
@@ -11,7 +19,7 @@ function ProjectItem({ thumbnail, title, alt, liveUrl, codeUrl, technologies }) 
                 <div className="project-description">
                     {
                         technologies.map((tech) => (
-                            <p>{tech}</p>
+                            <p key={uuidv4()}>{tech}</p>
                         ))
                     }
                 </div>
