@@ -159,10 +159,26 @@ body, html {
   position: fixed;
   top: 15vh;
 }
+
 .project-items {
   display: flex;
   flex-direction: row;
   margin-left: 200rem;
+}
+
+swiper-container {
+  width: 600px;
+  height: 520px;
+  padding-top: 4.5rem;
+  text-align: center;
+  --swiper-navigation-color: var(--light) !important;
+}
+
+swiper-slide {
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.5rem;
 }
 
 .project-item {
@@ -506,5 +522,100 @@ button:active {
   .footer-icon {
     height: 2.5rem;
     width: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    height: 30vh;
+    width: 100%;
+  }
+  .header-container ul {
+    flex-direction: column;
+  }
+
+  .home h1 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .home p {
+    margin: 0;
+    font-size: 1.2rem;
+    width: 300px;
+    line-height: 1.7rem;
+  }
+  .home-img img {
+    margin: 0;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .about h1, 
+  .projects-header h1, 
+  .contact h1 {
+    font-size: 1.2rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.8rem;
+    width: 40rem;
+  }
+  .contact {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .contact h1,
+  .contact p {
+    text-align: center;
+  }
+  .contact p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 70vw;
+  }
+  .contact-email {
+    font-size: 1.2rem;
+  }
+  .contact-text :nth-child(4) {
+    font-size: 1.2rem;
+  }
+  .form-group {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form-group label {
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  input {
+    height: 2.2rem;
+  }
+  input,
+  textarea {
+    width: 20rem;
+    font-size: 1rem;
+  }
+  button {
+    height: 2rem;
+    width: 8rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-links {
+    width: 400px;
+  }
+  .footer-icon {
+    height: 1.7rem;
+    width: 2rem;
   }
 }
