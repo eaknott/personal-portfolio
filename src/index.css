@@ -137,13 +137,11 @@ body, html {
 .about h1 {
   text-align: center;
   color: var(--light);
-  margin: 0 auto 2.5rem 2rem;
   letter-spacing: 0.09rem;
 }
 
 .about p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
   text-align: justify;
   width: 60vw;
   min-width: 450px;
@@ -151,6 +149,10 @@ body, html {
   font-weight: bold;
   letter-spacing: 0.075rem;
   margin: 0 auto 1.5rem 2rem;
+}
+
+.about-text main {
+  background-color: var(--primary);
 }
 
 /* PROJECTS PAGE */
@@ -425,7 +427,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 
