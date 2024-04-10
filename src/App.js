@@ -24,9 +24,9 @@ function App() {
             <Route path='/skills' element={<Skills />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
-      <Footer />
     </>
   );
 }
