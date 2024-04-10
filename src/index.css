@@ -38,6 +38,11 @@ body, html {
   display: flex;
 }
 
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 /* HEADER */
 
 .header-container {
@@ -48,6 +53,8 @@ body, html {
   justify-content: flex-end;
   align-items: center;
   position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .header-container ul {
@@ -134,15 +141,23 @@ body, html {
 
 /* ABOUT PAGE */
 
+.about {
+  margin-top: 8vh;
+  padding-bottom: 40vh;
+  min-height: 135vh;
+}
+
 .about h1 {
   text-align: center;
   color: var(--light);
   letter-spacing: 0.09rem;
+  margin: 3rem 0;
 }
 
 .about p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: justify;
+  line-height: 2.2rem;
   width: 60vw;
   min-width: 450px;
   color: var(--tertiary);
@@ -160,7 +175,7 @@ body, html {
 .projects-header {
   position: fixed;
   top: 15vh;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .project-items {
@@ -264,7 +279,7 @@ swiper-slide {
 .skills h1 {
   text-align: center;
   color: var(--light);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.09rem;
 }
 
@@ -332,6 +347,7 @@ swiper-slide {
   color: var(--light);
   margin: 0 auto 2.5rem 2rem;
   letter-spacing: 0.09rem;
+  font-size: 2rem;
 }
 
 .contact p {
@@ -427,7 +443,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
