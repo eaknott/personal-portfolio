@@ -224,7 +224,6 @@ swiper-slide {
   transform: translate(2px, 2px);
 }
 
-
 .project-text {
   display: flex;
   flex-direction: column;
@@ -480,53 +479,66 @@ button:active {
     margin: 0 1.8rem;
   }
   .header-container li {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .home {
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 5rem;
+    margin-top: 1vh;
   }
   .home-text {
     text-align: center;
   }
   .home h1 {
-    margin: 3rem 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 1rem 0;
   }
   .home p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: var(--primary);
   }
   .home-img img {
+    height: 17rem;
+    width: 17rem;
     margin: 0;
-    height: 22rem;
-    width: 22rem;
   }
 
   .about h1, 
   .projects-header h1, 
   .contact h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .about {
+    margin-top: 47vh;
+    margin-bottom: 60vh;
   }
   .about p {
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: center;
-    line-height: 3.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
   }
+  .about p:last-child {
+    padding-bottom: 30vh;
+  }
+
   .contact {
     flex-direction: column;
     row-gap: 2rem;
+    margin-top: 43vh;
+    padding-bottom: 45vh;
   }
-  .contact h1,
-  .contact p {
-    text-align: center;
-  }
-  .contact p {
-    line-height: 3rem;
+  .contact h1 {
     font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .contact p {
+    line-height: 2.4rem;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 500;
     width: 70vw;
   }
@@ -556,7 +568,7 @@ button:active {
     width: 30rem;
     font-size: 1.1rem;
   }
-  button {
+  .form-button {
     height: 2.5rem;
     width: 12rem;
     margin-top: 1.5rem;
@@ -565,15 +577,15 @@ button:active {
   }
 
   .footer-links {
-    width: 700px;
+    width: 600px;
   }
   .footer-icon {
-    height: 2.5rem;
-    width: 3rem;
+    height: 1.8rem;
+    width: 2.2rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .header-container {
     height: 30vh;
     width: 100%;
@@ -647,7 +659,7 @@ button:active {
     width: 20rem;
     font-size: 1rem;
   }
-  button {
+  .form-button button {
     height: 2rem;
     width: 8rem;
     margin-top: 1.2rem;
@@ -666,4 +678,4 @@ button:active {
     height: 1.7rem;
     width: 2rem;
   }
-}
+} */
