@@ -5,7 +5,7 @@ function Home() {
     <div className="home">
       <div className="home-text">
         <h1>Hello, my name is Emily.</h1>
-        <p>I'm a frontend developer, animal lover, environmental advocate, and passionate learner. Welcome to my website!</p>
+        <p>I'm a frontend developer, animal lover, environmental advocate, and avid learner. Welcome to my website!</p>
       </div>
       <div className="home-img">
         <img src={ProfileImage} alt="profile" />
