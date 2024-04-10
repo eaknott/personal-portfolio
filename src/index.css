@@ -158,6 +158,7 @@ body, html {
 .projects-header {
   position: fixed;
   top: 15vh;
+  font-size: 1rem;
 }
 
 .project-items {
@@ -254,23 +255,27 @@ swiper-slide {
 
 /* SKILLS PAGE */
 
+.skills {
+  flex-direction: column;
+}
+
 .skills h1 {
   text-align: center;
   color: var(--light);
-  margin: 0 auto 2.5rem 2rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.09rem;
 }
 
 .skills p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.35rem;
+  line-height: 1.8rem;
   text-align: justify;
   width: 60vw;
   min-width: 450px;
   color: var(--tertiary);
   font-weight: bold;
   letter-spacing: 0.075rem;
-  margin: 0 auto 1.5rem 2rem;
+  margin-bottom: 4rem;
 }
 
 .skills a {
@@ -280,6 +285,31 @@ swiper-slide {
 
 .skills a:hover {
   color: var(--light);
+}
+
+.skills-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200px;
+  width: 850px;
+  column-gap: 7rem;
+  row-gap: 3rem;
+}
+
+.skills-item {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  color: #ddd;
+}
+
+.skills-icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* CONTACT PAGE */
