@@ -12,7 +12,7 @@ function ProjectItem({
     <div>
         <div className="project-item">
             <a href={liveUrl} target="_blank" rel="noreferrer" className="project-thumbnail">
-                <img src={thumbnail} alt={alt} width="200px" />
+                <img src={thumbnail} alt={alt} width="350px" />
             </a>
             <div className="project-text">
                 <a href={liveUrl} target="_blank" rel="noreferrer">
