@@ -27,7 +27,7 @@ function Hamburger({ isOpen }) {
                     justify-content: space-around;
                     flex-flow: column nowrap;
                     z-index: 10;
-                    margin-right: 2.5rem;
+                    margin-right: 1.5rem;
                     display: none;
                 }
 
@@ -48,19 +48,18 @@ function Hamburger({ isOpen }) {
                     transition: 0.3s ease-out;
                     flex-direction: column;
                     background-color: #424769;
-                    height: 15rem;
-                    width: 40vw;
+                    height: 30rem;
+                    width: 20rem;
                     position: absolute;
                     right: 0;
                     margin-right: 0;
-                    padding-left: 1rem;
-                    border-radius: 2px;
-                    padding-top: 2.5rem;
-                    line-height: 2rem;
+                    padding-top: 3.5rem;
+                    line-height: 4.5rem;
                 }
 
                 .hamburger-navbar li {
                     margin: 0.2rem auto;
+                    font-size: 2.5rem;
                 }
 
                 .burger-top {
