@@ -1,3 +1,5 @@
+import ResumeButton from "../components/ResumeButton"
+
 function Contact() {
   return (
     <div className="contact">
@@ -6,6 +8,7 @@ function Contact() {
             <p>If you would like to say hello or learn more about my experience, you can reach me by email, LinkedIn, or by dropping a message here. I will get back to you as soon as I can.</p>
             <br />
             <p>My email: <span className="contact-email">emilyknott.dev@gmail.com</span></p>
+            <ResumeButton />
         </section>
         <section>
           <form>
