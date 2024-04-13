@@ -344,34 +344,35 @@ swiper-slide {
 
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 5rem;
+  padding: 8rem 0;
 }
 
 .contact-text {
-  text-align: right;
+  text-align: center;
+  max-width: 85vw;
 }
 
 .contact h1 {
-  text-align: right;
   color: var(--light);
-  margin: 0 auto 2.5rem 2rem;
   letter-spacing: 0.09rem;
-  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
 }
 
 .contact p {
-  width: 20vw;
-  min-width: 25rem;
   font-size: 1.1rem;
   line-height: 2rem;
   color: var(--tertiary);
   font-weight: bold;
   letter-spacing: 0.075rem;
-  margin: 0 auto 1.5rem 2rem;
-  text-align: right;
+}
+
+.contact-text p:last-of-type {
+  border-top: 2px solid var(--secondary);
+  padding-top: 1rem;
 }
 
 .contact-email {
@@ -381,6 +382,7 @@ swiper-slide {
 form {
   display: flex;
   flex-direction: column;
+  margin-top: 2.5rem;
 }
 
 .form-group {
@@ -393,7 +395,6 @@ form {
 }
 
 input, textarea {
-  width: 20rem;
   border-radius: 5px;
   padding: 0 0.5rem;
   background-color: var(--tertiary);
