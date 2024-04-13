@@ -76,12 +76,18 @@ body, html {
   display: none;
 }
 
+@media only screen and (min-width: 767px) {
+  #navbar {
+    display: flex;
+  }
+}
+
 .header-container ul {
   display: flex;
   flex-direction: row;
   margin: 0 15px;
   list-style-type: none;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 .header-container li {
@@ -124,9 +130,11 @@ body, html {
 /* HOME PAGE */
 
 .home {
+  height: 80vh;
+  width: 100vw;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .home h1 {
@@ -135,7 +143,8 @@ body, html {
   font-family: 'Fira Sans', Helvetica, sans-serif;
   text-align: center;
   margin: 1rem auto;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  max-width: 90vw;
 }
 
 .home p {
@@ -157,6 +166,22 @@ body, html {
   margin-top: 8rem;
 }
 
+@media only screen and (min-width: 767px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin: 0 3rem;
+    width: 70vw;
+  }
+  .home-img img {
+    height: 18rem;
+    width: 18rem;
+  }
+}
+
 /* ABOUT PAGE */
 
 .about {
@@ -171,6 +196,7 @@ body, html {
   letter-spacing: 0.09rem;
   margin: 8rem auto 2rem auto;
   font-size: 1.8rem;
+  padding-top: 10%;
 }
 
 .about p {
@@ -188,6 +214,18 @@ body, html {
   background-color: var(--primary);
 }
 
+@media only screen and (min-width: 767px) {
+  .about h1 {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 /* PROJECTS PAGE */
 
 .projects {
@@ -199,7 +237,8 @@ body, html {
 
 swiper-container {
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
+  padding-top: 5vh;
   text-align: center;
   --swiper-navigation-color: var(--light) !important;
 }
@@ -262,7 +301,7 @@ swiper-slide {
   flex-direction: row;
   column-gap: 2rem;
   line-height: 2rem;
-  width: 90vw;
+  max-width: 80vw;
   flex-wrap: wrap;
   justify-content: center;
   color: var(--tertiary);
@@ -274,9 +313,50 @@ swiper-slide {
 .project-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  column-gap: 1rem;
   width: 90vw;
+  margin-top: 0.5rem;
+}
+
+.project-buttons button {
+  width: 10rem;
+  padding: 0.4rem 1.5rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .projects {
+    padding-top: 10rem;
+  }
+  .projects-header {
+    padding-top: 10%;
+  }
+  swiper-container {
+    padding-top: 10vh;
+  }
+  .project-thumbnail img {
+    width: 21rem;
+  }
+  .project-text h1 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  .project-description {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    column-gap: 2.7rem;
+  }
+  .project-buttons {
+    margin-top: 1rem;
+    column-gap: 2rem;
+  }
+  .project-buttons button {
+    text-transform: uppercase;
+    width: 11rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+  }
 }
 
 /* SKILLS PAGE */
@@ -293,6 +373,7 @@ swiper-slide {
   color: var(--light);
   letter-spacing: 0.09rem;
   margin-bottom: 2.5rem;
+  padding-top: 10%;
 }
 
 .skills p {
@@ -324,6 +405,7 @@ swiper-slide {
   column-gap: 4rem;
   row-gap: 2.5rem;
   background-color: var(--primary);
+  width: 90vw;
 }
 
 .skills-item {
@@ -338,6 +420,21 @@ swiper-slide {
 .skills-icon {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .skills {
+    padding: 10rem 0;
+  }
+  .skills p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 6rem;
+    width: 75vw;
+  }
+  .skills-body {
+    padding: 0 3rem;
+  }
 }
 
 /* CONTACT PAGE */
@@ -360,6 +457,8 @@ swiper-slide {
   letter-spacing: 0.09rem;
   margin-bottom: 2rem;
   font-weight: 800;
+  font-size: 2rem;
+  padding-top: 10%;
 }
 
 .contact p {
@@ -446,6 +545,37 @@ button:active {
   background-color: #cccccc;
 }
 
+@media only screen and (min-width: 767px) {
+  .contact {
+    padding: 10rem 0;
+  }
+  .contact-text {
+    max-width: 75vw;
+  }
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact-text p:last-of-type {
+    padding: 2rem 0;
+  }
+  .form-group label {
+    font-size: 1.2rem;
+  }
+  input, textarea {
+    width: 30rem;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1rem;
+  }
+  .form-button {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.3rem 3.5rem;
+    margin-top: 1rem;
+  }
+}
+
 /* FOOTER */
 
 .footer-container {
@@ -470,6 +600,12 @@ button:active {
 .footer-icon {
   height: 1.5rem;
   width: 2rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .footer-icon {
+    height: 2rem;
+  }
 }
 
 .footer-links a {
