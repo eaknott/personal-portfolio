@@ -36,4 +36,11 @@ function Skills() {
           <SiMongodb className="skills-icon" /> MongoDB
         </div>
         <div className="skills-item">
-          <SiFirebase className="skills-icon" />
+          <SiFirebase className="skills-icon" /> Firebase
+        </div>
+      </main>
+    </div>
+  )
+}
+
+export default Skills
