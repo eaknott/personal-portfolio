@@ -1,4 +1,4 @@
-import myCV from '../assets/EmilyKnott_CV.jpg'
+import myCV from '../assets/EMILY KNOTT CV.jpg'
 
 function ResumeButton() {
   return (

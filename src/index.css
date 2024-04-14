@@ -368,6 +368,14 @@ swiper-slide {
   padding: 8rem 0;
 }
 
+.skills-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
 .skills h1 {
   text-align: center;
   color: var(--light);
@@ -384,8 +392,8 @@ swiper-slide {
   font-weight: bold;
   letter-spacing: 0.075rem;
   background-color: var(--primary);
-  margin-bottom: 2rem;
   width: 90vw;
+  margin-bottom: 1rem;
 }
 
 .skills a {
@@ -426,11 +434,14 @@ swiper-slide {
   .skills {
     padding: 10rem 0;
   }
+  .skills-text {
+    margin-bottom: 6rem;
+  }
   .skills p {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    margin-bottom: 6rem;
     width: 75vw;
+    margin-bottom: 2rem;
   }
   .skills-body {
     padding: 0 3rem;
@@ -447,7 +458,8 @@ swiper-slide {
   padding: 8rem 0;
 }
 
-.contact-text {
+.contact-text,
+.contact-info {
   text-align: center;
   max-width: 85vw;
 }
@@ -469,9 +481,17 @@ swiper-slide {
   letter-spacing: 0.075rem;
 }
 
-.contact-text p:last-of-type {
+.contact-text p {
+  padding-bottom: 1.5rem;
+}
+
+.contact-info {
+  border-bottom: 2px solid var(--secondary);
   border-top: 2px solid var(--secondary);
-  padding-top: 1rem;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .contact-email {

@@ -8,10 +8,8 @@ function Skills() {
       <header className="skills-text">
         <h1>Technical Skills</h1>
         <p>Here are a few of the technologies, libraries, and services that I've worked with recently. Feel free to <a href="https://www.linkedin.com/in/emilyaknott/" target="_blank" rel="noreferrer">check out my LinkedIn profile</a> for more details.</p>
-      </header>
-      <section>
         <ResumeButton />
-      </section>
+      </header>
       <main className="skills-body">
         <div className="skills-item">
           <FaHtml5 className="skills-icon" /> HTML
@@ -38,11 +36,4 @@ function Skills() {
           <SiMongodb className="skills-icon" /> MongoDB
         </div>
         <div className="skills-item">
-          <SiFirebase className="skills-icon" /> Firebase
-        </div>
-      </main>
-    </div>
-  )
-}
-
-export default Skills
+          <SiFirebase className="skills-icon" />
