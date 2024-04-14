@@ -35,7 +35,7 @@ function Projects() {
                 alt="house marketplace app" 
                 liveUrl="https://house-marketplace-app-ochre.vercel.app/" 
                 codeUrl="https://github.com/eaknott/house-marketplace-app" 
-                technologies={["React", "Firebase Auth", "Geocoding API", "Firestore NoSQL", "Google OAuth"]}
+                technologies={["React", "Firebase/Firestore", "Geocoding API", "Google OAuth"]}
               />
 
               </swiper-slide>
