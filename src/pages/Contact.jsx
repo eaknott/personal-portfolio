@@ -5,7 +5,7 @@ function Contact() {
     <div className="contact">
         <section className="contact-text">
             <h1>Get in Touch</h1>
-            <p>Contact me if you would like to say hello or learn more about my experience. You can send me an email or a message over LinkedIn, or leave a message down below. I will get back to you as soon as I can.</p>
+            <p>Contact me if you would like to say hello or learn more about my experience. You can send me an email or a message over LinkedIn. I will get back to you as soon as I can.</p>
         </section>
         <section className="contact-info">
           <p>Reach me by email: <span className="contact-email">emilyknott.dev@gmail.com</span></p>
@@ -14,7 +14,7 @@ function Contact() {
             <ResumeButton />
           </div>
         </section>
-        <section>
+        {/* <section>
           <form>
             <div className="form-group">
                 <label>Your Name</label>
@@ -26,13 +26,4 @@ function Contact() {
             </div>
             <div className="form-group">
                 <label>Your Message</label>
-                <textarea placeholder="Type your message here..." cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit" className="form-button">Send</button>
-          </form>
-        </section>
-    </div>
-  )
-}
-
-export default Contact
+                <textarea placeholder="Type your message her
