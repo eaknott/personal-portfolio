@@ -76,12 +76,6 @@ body, html {
   display: none;
 }
 
-@media only screen and (min-width: 767px) {
-  #navbar {
-    display: flex;
-  }
-}
-
 .header-container ul {
   display: flex;
   flex-direction: row;
@@ -111,6 +105,27 @@ body, html {
 .header-container a:active {
   color: var(--light);
   border-bottom: 2px solid var(--light);
+}
+
+@media only screen and (min-width: 767px) {
+  #navbar {
+    display: flex;
+  }
+  .header-container li {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .header-container li {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-container li {
+    font-size: 1.2rem;
+  }
 }
 
 /* PAGES */
@@ -177,8 +192,76 @@ body, html {
     width: 70vw;
   }
   .home-img img {
-    height: 18rem;
-    width: 18rem;
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .home {
+    margin: 2rem 0;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .home-img img {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .home {
+    flex-direction: row;
+    margin: 2rem 0;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+    text-align: start;
+    margin: 2rem 3rem;
+  }
+  .home p {
+    font-size: 1.7rem;
+    text-align: start;
+    width: 50vw;
+  }
+  .home-img img {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    flex-direction: row;
+    margin: 2rem 0;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+    text-align: start;
+    margin: 2rem 3rem;
+  }
+  .home p {
+    font-size: 1.7rem;
+    text-align: start;
+    width: 50vw;
+  }
+  .home-img img {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home {
+    margin: 3rem 0;
   }
 }
 
@@ -223,6 +306,35 @@ body, html {
   .about p {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about h1 {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about h1 {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .about h1 {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about h1 {
+    font-size: 2.7rem;
+    margin-top: 5rem;
+  }
+  .about p {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -359,6 +471,95 @@ swiper-slide {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .projects {
+    padding-top: 0;
+  }
+  swiper-container {
+    padding: 1rem;
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .projects {
+    padding-top: 0;
+  }
+  swiper-container {
+    padding: 2vh;
+  }
+  .project-thumbnail img {
+    width: 17rem;
+  }
+  .project-description {
+    margin-top: 0.5rem;
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 600px) {
+  .projects {
+    padding-top: 0;
+  }
+  swiper-container {
+    padding: 2rem;
+    height: 70vh;
+  }
+  .project-thumbnail img {
+    width: 17rem;
+  }
+  .project-description {
+    margin-top: 0.5rem;
+    max-width: 90vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 0;
+  }
+  .projects-header h1 {
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+  swiper-container {
+    padding: 1vh;
+    height: 50vh;
+  }
+  .project-thumbnail img {
+    width: 25rem;
+  }
+  .project-description {
+    margin-top: 2rem;
+    max-width:70vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 800px) {
+  .projects {
+    padding-top: 0;
+  }
+  swiper-container {
+    padding: 2vh;
+    height: 60vh;
+  }
+  .project-thumbnail img {
+    width: 17rem;
+  }
+  .project-description {
+    margin-top: 0.5rem;
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .projects {
+    padding-top: 0;
+  }
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+}
+
 /* SKILLS PAGE */
 
 .skills {
@@ -445,6 +646,44 @@ swiper-slide {
   }
   .skills-body {
     padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .skills {
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .skills {
+    padding: 10rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .skills {
+    padding: 5rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .skills {
+    padding-top: 5rem;
+  }
+  .skills h1 {
+    font-size: 2.7rem;
+  }
+  .skills p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .skills p,
+  .skills-body {
+    width: 70vw;
   }
 }
 
@@ -596,6 +835,42 @@ button:active {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .contact {
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact {
+    padding: 10rem 0;
+  }
+  .resume-download button {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .contact {
+    padding: 5rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact {
+    padding: 5rem 0 8rem 0;
+  }
+  .contact h1 {
+    font-size: 2.7rem;
+  }
+  .contact p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .resume-download button {
+    font-size: 1.5rem;
+  }
+}
 /* FOOTER */
 
 .footer-container {
@@ -622,12 +897,6 @@ button:active {
   width: 2rem;
 }
 
-@media only screen and (min-width: 767px) {
-  .footer-icon {
-    height: 2rem;
-  }
-}
-
 .footer-links a {
   text-decoration: none;
   color: var(--tertiary);
@@ -640,4 +909,45 @@ button:active {
 
 .footer-links a:active {
   color: var(--light);
+}
+
+@media only screen and (min-width: 767px) {
+  .footer-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-links {
+    width: 60vw;
+  }
+  .footer-icon {
+    height: 2.5rem;
+    width: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .footer-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-links {
+    width: 40vw;
+  }
+  .footer-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }

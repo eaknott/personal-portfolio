@@ -26,13 +26,4 @@ function Contact() {
             </div>
             <div className="form-group">
                 <label>Your Message</label>
-                <textarea placeholder="Type your message here..." cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit" className="form-button">Send</button>
-          </form>
-        </section>
-    </div>
-  )
-}
-
-export default Contact
+                <textarea placeho
