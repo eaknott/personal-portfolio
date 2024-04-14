@@ -10,4 +10,4 @@ function ResumeButton() {
   )
 }
 
-export default ResumeButton
+export

@@ -14,11 +14,4 @@ function About() {
               <br />
               <br />
               <br />
-              <p>In my spare time, I like to volunteer and serve my community by prepping meals to feed the homeless and picking up litter by the riverside in my neighborhood or on the beach. I've also been known to enjoy escape rooms, hiking, and reading outside on sunny days and inside next my cats.</p>
-            </main>
-        </div>
-    </div>
-  )
-}
-
-export default About
+              <p>In my spare time, I like to volunteer and serve my community by prepping meals to feed the homeless and picking up litter by the riverside in my neighborhood or on the beach. I've also been known to enjoy escape rooms, hiking, and reading outside on sunny days and inside next my 

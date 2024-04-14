@@ -203,7 +203,7 @@ body, html {
 
 swiper-container {
   width: 100vw;
-  height: 65vh;
+  height: 60vh;
   padding-top: 7vh;
   text-align: center;
   --swiper-navigation-color: var(--light) !important;
@@ -245,7 +245,7 @@ swiper-slide {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .project-text a {
