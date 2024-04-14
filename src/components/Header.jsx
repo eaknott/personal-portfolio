@@ -3,7 +3,7 @@ import Hamburger from './Hamburger'
 import { Link } from 'react-router-dom'
 
 function Header() {
-  const [hamburgerOpen, setHamburgerOpen] = useState(true)
+  const [hamburgerOpen, setHamburgerOpen] = useState(false)
 
   const toggleHamburgerMenu = () => {
     setHamburgerOpen(!hamburgerOpen)
