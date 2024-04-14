@@ -266,14 +266,14 @@ swiper-slide {
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   max-width: 80vw;
   flex-wrap: wrap;
   justify-content: center;
   color: var(--tertiary);
   font-weight: bold;
   font-size: 1.1rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .project-buttons {
