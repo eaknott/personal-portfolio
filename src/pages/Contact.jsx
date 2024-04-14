@@ -26,4 +26,20 @@ function Contact() {
             </div>
             <div className="form-group">
                 <label>Your Message</label>
-                <textarea placeholder="Type your message her
+                <textarea placeholder="Type your message here..." cols="30" rows="10"></textarea>
+            </div>
+            <a href="mailto:emilyknott.dev@gmail.com">
+              <button 
+                type="submit" 
+                className="form-button"
+              >
+                Send
+              </button>
+            </a>
+          </form>
+        </section> */}
+    </div>
+  )
+}
+
+export default Contact
