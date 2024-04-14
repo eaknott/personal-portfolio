@@ -204,7 +204,7 @@ body, html {
 swiper-container {
   width: 100vw;
   height: 65vh;
-  padding-top: 5vh;
+  padding-top: 7vh;
   text-align: center;
   --swiper-navigation-color: var(--light) !important;
 }
