@@ -6,7 +6,7 @@ function About() {
               <h1>More About Me</h1>
             </header>
             <main>
-              <p>Born and raised in the Washington DC area, I'm now based in another capital, Taipei. Before venturing into the world of web development, I explored various roles such as teaching kindergarten ESL, professional dance and choreography for special events, and working in voice acting and audio editing for language e-learning platforms. </p>
+              <p>Born and raised in the Washington DC area, I'm now based in another capital, Taipei. Before venturing into the world of web development, I explored various roles such as teaching kindergarten ESL, professional dance and choreography for special events, and voice acting and audio editing for language e-learning platforms. </p>
               <br />
               <br />
               <br />
@@ -14,7 +14,7 @@ function About() {
               <br />
               <br />
               <br />
-              <p>In my spare time, I like to volunteer and serve my community by prepping meals to feed the homeless and picking up litter by the riverside in my neighborhood or on the beach. I've also been known to enjoy escape rooms, hiking, and reading outside on sunny days and inside next my cats.</p>
+              <p>In my spare time, I like to volunteer and serve my community by prepping meals to feed the homeless and picking up litter by the riverside or on the beach. I've also been known to enjoy escape rooms, hiking, and reading outside on sunny days and inside next my cats.</p>
             </main>
         </div>
     </div>
