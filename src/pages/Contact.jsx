@@ -2,7 +2,7 @@ import ResumeButton from "../components/ResumeButton"
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
         <section className="contact-text">
             <h1>Get in Touch</h1>
             <p>Contact me if you would like to say hello or learn more about my experience. You can send me an email or a message over LinkedIn. I will get back to you as soon as I can.</p>

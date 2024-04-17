@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function Hamburger({ isOpen }) {
   return (
@@ -9,12 +9,19 @@ function Hamburger({ isOpen }) {
             <div className="burger burger-bottom"></div>
         </div>
         <div className="hamburger-navbar">
-            <ul>
+            {/* <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/skills">Skills</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+            </ul> */}
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
@@ -63,7 +70,7 @@ function Hamburger({ isOpen }) {
                 }
 
                 .burger-top {
-                    transform: ${isOpen ? 'rotate(45deg)' : 'rotate(0)'};
+                    transform: ${isOpen ? 'translateY(10px)' : 'rotate(0)'};
                     transition: 0.2s linear;
                 }
 
@@ -73,7 +80,7 @@ function Hamburger({ isOpen }) {
                 }
 
                 .burger-bottom {
-                    transform: ${isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
+                    transform: ${isOpen ? 'translateY(-10px)' : 'rotate(0)'};
                     transition: 0.2s linear;
                 }
 

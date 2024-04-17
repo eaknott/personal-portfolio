@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
-import { FaXTwitter, FaCodepen } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaCodepen } from 'react-icons/fa6';
 
 function Footer() {
   return (
@@ -10,12 +10,6 @@ function Footer() {
         </a>
         <a href="https://www.linkedin.com/in/emilyaknott/" target="_blank" rel="noreferrer">
           <FaLinkedin className="footer-icon" />          
-        </a>
-        <a href="https://twitter.com/emknotty" target="_blank" rel="noreferrer">
-          <FaXTwitter className="footer-icon" />          
-        </a>
-        <a href="https://www.facebook.com/eaknott/" target="_blank" rel="noreferrer">
-          <FaFacebook className="footer-icon" />          
         </a>
         <a href="https://www.instagram.com/itsemilyknott/" target="_blank" rel="noreferrer">
           <FaInstagram className="footer-icon" />          

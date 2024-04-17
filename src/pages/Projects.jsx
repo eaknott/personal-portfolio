@@ -20,7 +20,7 @@ import sketchPadThumbnailWide from '../assets/thumbnails/sketch-pad-thumbnail-wi
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
         <div className="projects-header">
             <h1>My Projects</h1>
         </div>
