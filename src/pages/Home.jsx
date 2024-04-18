@@ -8,7 +8,7 @@ function Home() {
         <p>I'm a frontend developer, animal lover, and avid learner. Welcome to my website! Keep scrolling to learn more ...</p>
       </div>
       <div className="home-img">
-        <img src={ProfileImage} alt="profile" />
+        <img src={ProfileImage} alt="Headshot" />
       </div>
     </div>
   )

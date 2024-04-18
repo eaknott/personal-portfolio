@@ -1,28 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* Strawberry Mint */
-/* :root {
-  --primary: #0B132B;
-  --secondary: #1C2541;
-  --tertiary: #D0F4EA;
-  --light: #FBCAEF;
-} */
-
 /* Peach Mint */
 /* :root {
   --primary: #22223B;
   --secondary: #4A4E69;
   --tertiary: #DBF9F0;
   --light: #FFB9A5;
-} */
-
-/* Poolside */
-/* :root {
-  --primary: #0B132B;
-  --secondary: #344168;
-  --light: #6FFFE9;
-  --tertiary: #FFD6E0;
 } */
 
 /* Lavender Cream */
@@ -60,6 +44,7 @@ body, html {
   background-color: var(--primary);
   height: 100vh;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 .app-container {
@@ -102,12 +87,12 @@ body, html {
 .header-container a {
   text-decoration: none;
   color: var(--light);
+  transition: all 200ms;
 }
 
 .header-container a:hover {
   color: #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
-  transition: 0.25s;
 }
 
 .header-container a:active {
@@ -482,11 +467,11 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: var(--light);
+  color: var(--primary);
+  transition: background-color 120ms linear, color 120ms linear;
 }
 
-button:active {
-  background-color: #cccccc;
-}
 
 /* FOOTER */
 
@@ -517,11 +502,12 @@ button:active {
 .footer-links a {
   text-decoration: none;
   color: var(--tertiary);
+  transition: all 300ms ease-in-out;
 }
 
 .footer-links a:hover {
-  color: #eeeeee;
-  transition: 0.5s;
+  color: var(--light);
+  transform: translateY(-5px);
 }
 
 .footer-links a:active {
@@ -565,30 +551,34 @@ button:active {
   .projects-header {
     padding-top: 10%;
   }
-  swiper-container {
-    padding-top: 10vh;
+  .project-item {
+    width: 45vw;
   }
+  /* swiper-container {
+    padding-top: 10vh;
+  } */
   .project-thumbnail img {
-    width: 21rem;
+    width: 17rem;
   }
   .project-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
   }
   .project-description {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2.7rem;
-    column-gap: 2.7rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
   }
   .project-buttons {
-    margin-top: 1rem;
-    column-gap: 2rem;
+    margin-top: 0.1rem;
+    column-gap: 1rem;
   }
   .project-buttons button {
     text-transform: uppercase;
-    width: 11rem;
-    padding: 0.5rem 1.5rem;
-    font-size: 1.1rem;
+    width: 8rem;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
   }
   .skills {
     padding: 10rem 0;
