@@ -58,11 +58,15 @@ body, html {
   height: 10%;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   z-index: 5;
+}
+
+.logo {
+  margin-left: 2rem;
 }
 
 #navbar {
@@ -90,12 +94,12 @@ body, html {
   transition: all 200ms;
 }
 
-.header-container a:hover {
+#navbar a:hover {
   color: #EEEEEE;
   border-bottom: 2px solid #EEEEEE;
 }
 
-.header-container a:active {
+#navbar a:active {
   color: var(--light);
   border-bottom: 2px solid var(--light);
 }
@@ -568,7 +572,6 @@ button:hover {
     font-size: 1rem;
     line-height: 2.7rem;
     column-gap: 2rem;
-    flex-wrap: wrap;
   }
   .project-buttons {
     margin-top: 0.1rem;

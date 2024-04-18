@@ -70,7 +70,8 @@ function Hamburger({ isOpen }) {
                 }
 
                 .burger-top {
-                    transform: ${isOpen ? 'translateY(10px)' : 'rotate(0)'};
+                    transform: ${isOpen ? 'translateY(10px) rotate(45deg)' : 'rotate(0)'};
+                    transform-origin: center center;
                     transition: 0.2s linear;
                 }
 
@@ -80,9 +81,11 @@ function Hamburger({ isOpen }) {
                 }
 
                 .burger-bottom {
-                    transform: ${isOpen ? 'translateY(-10px)' : 'rotate(0)'};
+                    transform: ${isOpen ? 'translateY(-12px) rotate(135deg)' : 'rotate(0)'};
+                    transform-origin: center center;
                     transition: 0.2s linear;
                 }
+
 
                 @media only screen and (max-width: 767px) {
                     .hamburger {
