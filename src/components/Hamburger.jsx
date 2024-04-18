@@ -46,7 +46,7 @@ function Hamburger({ isOpen }) {
                     width: 2rem;
                     height: 0.25rem;
                     border-radius: 2px;
-                    background-color: #ddd;
+                    background-color: #EEE1B3;
                     transform-origin: 1px;
                 }
 
@@ -54,7 +54,7 @@ function Hamburger({ isOpen }) {
                     transform: ${isOpen ? 'translateX(0)' : 'translateX(100%)'};
                     transition: 0.3s ease-out;
                     flex-direction: column;
-                    background-color: #424769;
+                    background-color: #1C2541;
                     height: 30rem;
                     width: 20rem;
                     position: absolute;

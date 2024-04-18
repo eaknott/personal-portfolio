@@ -12,6 +12,7 @@ function App() {
     <>
       <Router>
         <div className="app-container">
+
           <Header />
           <Home />
           <About />

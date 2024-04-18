@@ -26,8 +26,8 @@ function Projects() {
         </div>
 
         <main>
-          <swiper-container slides-per-view="1" space-between="20" scrollbar-clickable="true" mousewheel-invert="true" navigation="true" loop="true">
-              <swiper-slide>
+          {/* <swiper-container slides-per-view="1" space-between="20" scrollbar-clickable="true" mousewheel-invert="true" navigation="true" loop="true">
+              <swiper-slide> */}
 
                 <ProjectItem 
                 thumbnail={houseMarketplaceThumbnailWide} 
@@ -38,8 +38,8 @@ function Projects() {
                 technologies={["React", "Firebase/Firestore", "Geocoding API", "Google OAuth"]}
               />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={githubFinderThumbnailWide} 
@@ -50,8 +50,8 @@ function Projects() {
                   technologies={["React", "GitHub API", "TailwindCSS", "DaisyUI"]}
                 />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={supportDeskThumbnailWide} 
@@ -62,8 +62,8 @@ function Projects() {
                   technologies={["MERN full-stack", "Redux", "React Router 6", "React Toastify"]}
                 />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={faqAccordionThumbnailWide} 
@@ -74,8 +74,8 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={drumMachineThumbnailWide} 
@@ -86,8 +86,8 @@ function Projects() {
                   technologies={["React", "HTML", "CSS"]}
                 />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={calculatorThumbnailWide} 
@@ -98,8 +98,8 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={randomQuoteMachineThumbnailWide} 
@@ -110,8 +110,8 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={productPreviewCardThumbnailWide} 
@@ -122,8 +122,8 @@ function Projects() {
                   technologies={["HTML", "CSS"]}
                 />   
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
                   thumbnail={sketchPadThumbnailWide} 
@@ -134,9 +134,9 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
+              {/* </swiper-slide>
 
-          </swiper-container>
+          </swiper-container> */}
           </main>
 
     </div>
