@@ -493,15 +493,15 @@ button:hover {
 }
 
 .footer-links {
-  width: 90vw;
+  width: 60vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .footer-icon {
-  height: 1.5rem;
-  width: 2rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .footer-links a {
@@ -640,13 +640,6 @@ button:hover {
   .home {
     margin: 2rem 0;
   }
-  .home h1 {
-    font-size: 2.5rem;
-  }
-  .home p {
-    font-size: 1.5rem;
-    line-height: 3rem;
-  }
   .home-img img {
     height: 15rem;
     width: 15rem;
@@ -672,10 +665,10 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  swiper-container {
+  /* swiper-container {
     padding: 1rem;
     height: 70vh;
-  }
+  } */
   .skills {
     padding: 10rem 0;
   }
@@ -687,10 +680,6 @@ button:hover {
   }
   .footer-links {
     width: 60vw;
-  }
-  .footer-icon {
-    height: 2.5rem;
-    width: 3rem;
   }
 }
 
@@ -705,12 +694,10 @@ button:hover {
     margin: 2rem 0;
   }
   .home h1 {
-    font-size: 2.5rem;
     text-align: start;
     margin: 2rem 3rem;
   }
   .home p {
-    font-size: 1.7rem;
     text-align: start;
     width: 50vw;
   }
@@ -725,10 +712,10 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  swiper-container {
+  /* swiper-container {
     padding: 2vh;
     height: 65vh;
-  }
+  } */
   .project-thumbnail img {
     width: 17rem;
   }
@@ -742,10 +729,6 @@ button:hover {
   .contact {
     padding: 5rem 0;
   }
-  .footer-icon {
-    height: 2rem;
-    width: 2rem;
-  }
 }
 
 /* iPAD PRO AND OTHER PORTRAIT TABLETS */
@@ -754,10 +737,10 @@ button:hover {
   .projects {
     padding-top: 10rem;
   }
-  swiper-container {
+  /* swiper-container {
     padding: 2rem;
     height: 70vh;
-  }
+  } */
   .project-thumbnail img {
     width: 17rem;
   }
@@ -775,39 +758,34 @@ button:hover {
     margin: 2rem 0;
   }
   .home h1 {
-    font-size: 2.5rem;
     text-align: start;
     margin: 2rem 3rem;
   }
   .home p {
-    font-size: 1.7rem;
     text-align: start;
     width: 50vw;
+
+    margin-left: 3rem;
   }
   .home-img img {
     height: 15rem;
     width: 15rem;
     margin-top: 0;
+    margin-right: 3rem;
   }
   .about h1 {
-    font-size: 2.7rem;
     margin-top: 5rem;
-  }
-  .about p {
-    font-size: 2rem;
-    line-height: 3rem;
   }
   .projects {
     padding-top: 0;
   }
   .projects-header h1 {
-    font-size: 2.5rem;
-    padding-top: 0;
+    padding-top: 70%;
   }
-  swiper-container {
+  /* swiper-container {
     padding: 1vh;
     height: 50vh;
-  }
+  } */
   .project-thumbnail img {
     width: 25rem;
   }
@@ -818,29 +796,18 @@ button:hover {
   .skills {
     padding-top: 5rem;
   }
-  .skills h1 {
-    font-size: 2.7rem;
-  }
-  .skills p {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
   .contact {
     padding: 5rem 0 8rem 0;
-  }
-  .contact h1 {
-    font-size: 2.7rem;
-  }
-  .contact p {
-    font-size: 2rem;
-    line-height: 3rem;
   }
   .resume-download button {
     font-size: 1.5rem;
   }
+  .footer-links {
+    width: 40vw;
+  }
   .footer-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 1.2rem;
+    width: 1.2rem;
   }
 }
 
@@ -850,10 +817,10 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  swiper-container {
+  /* swiper-container {
     padding: 2vh;
     height: 60vh;
-  }
+  } */
   .project-thumbnail img {
     width: 17rem;
   }
@@ -867,7 +834,7 @@ button:hover {
 
 @media only screen and (min-width: 1440px) {
   .header-container li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .home {
     margin: 3rem 0;
@@ -875,18 +842,12 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  .projects-header h1 {
-    font-size: 2rem;
-  }
   .skills p,
   .skills-body {
     width: 70vw;
   }
-  .footer-links {
-    width: 40vw;
-  }
   .footer-icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.2rem;
+    width: 1.2rem;
   }
 }
