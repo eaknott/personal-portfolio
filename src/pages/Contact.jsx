@@ -1,5 +1,3 @@
-import ResumeButton from "../components/ResumeButton"
-
 function Contact() {
   return (
     <div className="contact" id="contact">
@@ -11,7 +9,6 @@ function Contact() {
           <p>Reach me by email: <span className="contact-email">emilyknott.dev@gmail.com</span></p>
           <div>
             <p>Check out my resume:</p>
-            <ResumeButton />
           </div>
         </section>
         {/* <section>

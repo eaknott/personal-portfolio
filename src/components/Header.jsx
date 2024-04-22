@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Hamburger from './Hamburger'
 import flowerLogo from '../assets/flower-code-logo.svg'
+import ResumeButton from './ResumeButton'
 
 function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(true)
@@ -23,6 +24,7 @@ function Header() {
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><ResumeButton className="resume" /></li>
         </ul>
       </div>
       <div className="hamburger" onClick={toggleHamburgerMenu}>

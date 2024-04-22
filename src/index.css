@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* Peach Mint */
@@ -73,9 +73,19 @@ body, html {
   display: none;
 }
 
+#navbar button {
+  font-size: 0.8rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
 .header-container ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: 0 15px;
   list-style-type: none;
   margin-right: 2rem;
@@ -83,9 +93,9 @@ body, html {
 
 .header-container li {
   margin: 0 15px;
-  letter-spacing: 0.03rem;
   text-transform: uppercase;
-  font-family: 'Overpass', Helvetica, sans-serif;
+  /* font-family: 'Overpass', Helvetica, sans-serif; */
+  font-family: 'Fira Code', Courier, monospace;
 }
 
 .header-container a {
@@ -129,13 +139,24 @@ body, html {
   justify-content: space-evenly;
 }
 
+.home-text .intro {
+  font-family: 'Fira Code', Courier, monospace;
+  margin-bottom: 0.2rem;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  align-items: center;
+}
+
 .home h1 {
+  margin-bottom: 0.5rem;
   color: var(--light);
   letter-spacing: 0.09rem;
   font-family: 'Fira Sans', Helvetica, sans-serif;
-  text-align: center;
-  margin: 1rem auto;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   max-width: 90vw;
 }
 
@@ -143,7 +164,7 @@ body, html {
   color: var(--tertiary);
   font-size: 1rem;
   letter-spacing: 0.075rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: center;
   margin: auto 2rem;
 }
@@ -172,6 +193,29 @@ body, html {
   margin: 8rem auto 2rem auto;
   font-size: 1.5rem;
   padding-top: 10%;
+  position: relative;
+}
+
+.about h1::before {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 32px;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  background: var(--light);
+}
+
+.about h1::after {
+  content: "";
+  display: block;
+  height: 0.8px;
+  width: 32px;
+  position: absolute;
+  top: 75%;
+  right: 0;
+  background: var(--light);
 }
 
 .about p {
@@ -203,6 +247,37 @@ body, html {
   row-gap: 50px;
 }
 
+.projects-header h1 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.projects-header {
+  position: relative;
+}
+
+.projects-header::before {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 70px;
+  position: absolute;
+  top: 25%;
+  left: -65%;
+  background: var(--light);
+}
+
+.projects-header::after {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 70px;
+  position: absolute;
+  top: 25%;
+  right: -65%;
+  background: var(--light);
+}
+
 /* swiper-container {
   width: 100vw;
   height: 60vh;
@@ -224,16 +299,17 @@ swiper-slide {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 25rem;
+  height: 20rem;
   background-color: var(--secondary);
   border-radius: 10px;
-  padding: 10px 7px;
+  padding: 7px;
+  max-width: 80vw;
 }
 
 .project-thumbnail img {
   border-radius: 10px;
   box-shadow: 3px 3px 10px #bbbbbb;
-  width: 17rem;
+  width: 12rem;
 }
 
 .project-thumbnail img:hover {
@@ -250,7 +326,6 @@ swiper-slide {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .project-text a {
@@ -263,7 +338,7 @@ swiper-slide {
 
 .project-text h1 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #dddddd;
 }
 
@@ -271,13 +346,14 @@ swiper-slide {
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   max-width: 80vw;
   flex-wrap: wrap;
   justify-content: center;
   color: var(--tertiary);
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
+  font-family: "Fira Code", Courier, monospace;
 }
 
 .project-buttons {
@@ -291,8 +367,9 @@ swiper-slide {
 }
 
 .project-buttons button {
-  width: 10rem;
-  padding: 0.4rem 1.5rem;
+  width: 7rem;
+  padding: 0.4rem 0.2rem;
+  font-size: 0.8rem;
 }
 
 /* SKILLS PAGE */
@@ -318,6 +395,30 @@ swiper-slide {
   letter-spacing: 0.09rem;
   margin-bottom: 2.5rem;
   padding-top: 10%;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.skills h1::before {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 55px;
+  position: absolute;
+  top: 75%;
+  left: -35%;
+  background: var(--light);
+}
+
+.skills h1::after {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 55px;
+  position: absolute;
+  top: 75%;
+  right: -35%;
+  background: var(--light);
 }
 
 .skills p {
@@ -333,11 +434,11 @@ swiper-slide {
 
 .skills a {
   text-decoration: none;
-  color: #dddddd;
+  color: var(--light);
 }
 
 .skills a:hover {
-  color: var(--light);
+  text-decoration: underline;
 }
 
 .skills-body {
@@ -345,8 +446,8 @@ swiper-slide {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 4rem;
-  row-gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1.5rem;
   background-color: var(--primary);
   width: 90vw;
 }
@@ -387,6 +488,29 @@ swiper-slide {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   padding-top: 10%;
+  position: relative;
+}
+
+.contact h1::before {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 70px;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  background: var(--light);
+}
+
+.contact h1::after {
+  content: " ";
+  display: block;
+  height: 0.8px;
+  width: 70px;
+  position: absolute;
+  top: 75%;
+  right: 0;
+  background: var(--light);
 }
 
 .contact p {
@@ -506,17 +630,17 @@ button:hover {
 
 .footer-links a {
   text-decoration: none;
-  color: var(--tertiary);
+  color: var(--light);
   transition: all 200ms ease-in-out;
 }
 
 .footer-links a:hover {
-  color: var(--light);
+  color: var(--tertiary);
   transform: translateY(-5px);
 }
 
 .footer-links a:active {
-  color: var(--light);
+  color: var(--tertiary);
 }
 
 /* MEDIUM SCREENS AND MOST TABLETS */
@@ -556,17 +680,22 @@ button:hover {
   .projects {
     padding-top: 10rem;
   }
+  .projects main {
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
   .projects-header {
     padding-bottom: 5%;
   }
   .project-item {
-    width: 45vw;
+    width: 42vw;
   }
   /* swiper-container {
     padding-top: 10vh;
   } */
   .project-thumbnail img {
-    width: 17rem;
+    width: 12rem;
   }
   .project-text h1 {
     font-size: 1.5rem;
@@ -574,8 +703,9 @@ button:hover {
   }
   .project-description {
     font-size: 1rem;
-    line-height: 2.7rem;
+    line-height: 1.5rem;
     column-gap: 2rem;
+    width: 40vw;
   }
   .project-buttons {
     margin-top: 0.1rem;
