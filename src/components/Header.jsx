@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Hamburger from './Hamburger'
-import flowerLogo from '../assets/flower-code-logo.svg'
+import ekLogo from '../assets/ek-logo.svg'
 import ResumeButton from './ResumeButton'
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
     <div className="header-container">
       <div className="logo">
         <a href="#home">
-          <img src={flowerLogo} alt="Logo" width="45rem" />
+          <img src={ekLogo} alt="Logo" width="45rem" />
         </a>
       </div>
       <div id="navbar">

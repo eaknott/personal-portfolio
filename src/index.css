@@ -27,10 +27,10 @@
 
 /* TEST */
 /* :root {
-  --primary: #011638;
-  --secondary: #1C2541;
-  --tertiary: #85FFF5;
-  --light: #E7BBE3;
+  --primary: #28262c;
+  --secondary: #55505c;
+  --tertiary: #01fdf6;
+  --light: #fcddf2;
 } */
 
 * {
@@ -66,7 +66,8 @@ body, html {
 }
 
 .logo {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 0.75rem;
 }
 
 #navbar {
@@ -187,7 +188,7 @@ body, html {
 }
 
 .about h1 {
-  text-align: center;
+  text-align: left;
   color: var(--light);
   letter-spacing: 0.09rem;
   margin: 8rem auto 2rem auto;
@@ -196,22 +197,11 @@ body, html {
   position: relative;
 }
 
-.about h1::before {
-  content: " ";
-  display: block;
-  height: 0.8px;
-  width: 32px;
-  position: absolute;
-  top: 75%;
-  left: 0;
-  background: var(--light);
-}
-
 .about h1::after {
   content: "";
   display: block;
-  height: 0.8px;
-  width: 32px;
+  height: 0.5px;
+  width: 70px;
   position: absolute;
   top: 75%;
   right: 0;
@@ -220,7 +210,7 @@ body, html {
 
 .about p {
   font-size: 1.5rem;
-  text-align: justify;
+  text-align: left;
   line-height: 1.5rem;
   color: var(--tertiary);
   letter-spacing: 0.075rem;
@@ -249,32 +239,24 @@ body, html {
 
 .projects-header h1 {
   margin-bottom: 2rem;
+  margin-left: 10vw;
   font-size: 1.5rem;
+  width: 80vw;
 }
 
 .projects-header {
+  margin-right: auto;
   position: relative;
-}
-
-.projects-header::before {
-  content: " ";
-  display: block;
-  height: 0.8px;
-  width: 70px;
-  position: absolute;
-  top: 25%;
-  left: -65%;
-  background: var(--light);
 }
 
 .projects-header::after {
   content: " ";
   display: block;
-  height: 0.8px;
-  width: 70px;
+  height: 0.5px;
+  width: 160px;
   position: absolute;
   top: 25%;
-  right: -65%;
+  right: 0;
   background: var(--light);
 }
 
@@ -390,45 +372,35 @@ swiper-slide {
 }
 
 .skills h1 {
-  text-align: center;
+  text-align: left;
   color: var(--light);
   letter-spacing: 0.09rem;
   margin-bottom: 2.5rem;
   padding-top: 10%;
   font-size: 1.5rem;
   position: relative;
-}
-
-.skills h1::before {
-  content: " ";
-  display: block;
-  height: 0.8px;
-  width: 55px;
-  position: absolute;
-  top: 75%;
-  left: -35%;
-  background: var(--light);
+  width: 80vw;
 }
 
 .skills h1::after {
   content: " ";
   display: block;
-  height: 0.8px;
-  width: 55px;
+  height: 0.5px;
+  width: 100px;
   position: absolute;
   top: 75%;
-  right: -35%;
+  right: 0;
   background: var(--light);
 }
 
 .skills p {
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center;
+  text-align: left;
   color: var(--tertiary);
   letter-spacing: 0.075rem;
   background-color: var(--primary);
-  width: 90vw;
+  width: 80vw;
   margin-bottom: 1rem;
 }
 
@@ -449,7 +421,7 @@ swiper-slide {
   column-gap: 2.5rem;
   row-gap: 1.5rem;
   background-color: var(--primary);
-  width: 90vw;
+  width: 80vw;
 }
 
 .skills-item {
@@ -489,24 +461,15 @@ swiper-slide {
   font-size: 1.5rem;
   padding-top: 10%;
   position: relative;
-}
-
-.contact h1::before {
-  content: " ";
-  display: block;
-  height: 0.8px;
-  width: 70px;
-  position: absolute;
-  top: 75%;
-  left: 0;
-  background: var(--light);
+  width: 80vw;
+  text-align: left;
 }
 
 .contact h1::after {
   content: " ";
   display: block;
-  height: 0.8px;
-  width: 70px;
+  height: 0.5px;
+  width: 140px;
   position: absolute;
   top: 75%;
   right: 0;
@@ -518,6 +481,8 @@ swiper-slide {
   line-height: 1.5rem;
   color: var(--tertiary);
   letter-spacing: 0.075rem;
+  text-align: left;
+  width: 80vw;
 }
 
 .contact-text p {

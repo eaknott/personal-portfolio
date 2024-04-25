@@ -7,9 +7,6 @@ function Contact() {
         </section>
         <section className="contact-info">
           <p>Reach me by email: <span className="contact-email">emilyknott.dev@gmail.com</span></p>
-          <div>
-            <p>Check out my resume:</p>
-          </div>
         </section>
         {/* <section>
           <form>
