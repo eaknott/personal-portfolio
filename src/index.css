@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* Peach Mint */
-/* :root {
-  --primary: #22223B;
-  --secondary: #4A4E69;
-  --tertiary: #DBF9F0;
-  --light: #FFB9A5;
-} */
-
 /* Lavender Cream */
 :root {
   --secondary: #1C2541;
@@ -40,16 +32,13 @@
 }
 
 body, html {
-  /* background-image: url("./assets/Portfolio-Site-Background.jpg"); */
   background-color: var(--primary);
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.app-container {
-  position: relative;
-}
 
 /* HEADER */
 
@@ -138,6 +127,7 @@ body, html {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 10vh;
 }
 
 .home-text .intro {
@@ -185,6 +175,7 @@ body, html {
   justify-content: center;
   align-items: center;
   padding-bottom: 15vh;
+  background-image: url('./assets/topography-background.svg');
 }
 
 .about h1 {
@@ -200,7 +191,7 @@ body, html {
 .about h1::after {
   content: "";
   display: block;
-  height: 0.5px;
+  height: 0.1px;
   width: 70px;
   position: absolute;
   top: 75%;
@@ -218,9 +209,9 @@ body, html {
   font-size: 1rem;
 }
 
-.about-text main {
+/* .about-text main {
   background-color: var(--primary);
-}
+} */
 
 /* PROJECTS PAGE */
 
@@ -229,6 +220,7 @@ body, html {
   justify-content: center;
   align-items: center;
   padding-top: 8rem;
+  margin-bottom: 20vh;
 }
 
 .projects main {
@@ -252,7 +244,7 @@ body, html {
 .projects-header::after {
   content: " ";
   display: block;
-  height: 0.5px;
+  height: 0.1px;
   width: 160px;
   position: absolute;
   top: 25%;
@@ -361,6 +353,7 @@ swiper-slide {
   justify-content: center;
   align-items: center;
   padding: 8rem 0;
+  background-image: url('./assets/topography-background.svg');
 }
 
 .skills-text {
@@ -385,7 +378,7 @@ swiper-slide {
 .skills h1::after {
   content: " ";
   display: block;
-  height: 0.5px;
+  height: 0.1px;
   width: 100px;
   position: absolute;
   top: 75%;
@@ -420,7 +413,6 @@ swiper-slide {
   justify-content: center;
   column-gap: 2.5rem;
   row-gap: 1.5rem;
-  background-color: var(--primary);
   width: 80vw;
 }
 
@@ -467,8 +459,8 @@ swiper-slide {
 
 .contact h1::after {
   content: " ";
-  display: block;
-  height: 0.5px;
+  display: inline;
+  height: 0.1px;
   width: 140px;
   position: absolute;
   top: 75%;
@@ -499,52 +491,6 @@ swiper-slide {
 
 .contact-email {
   color: #cccccc;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  margin-bottom: 0.3rem;
-}
-
-input, textarea {
-  border-radius: 5px;
-  padding: 0 0.5rem;
-  background-color: var(--tertiary);
-  box-sizing: border-box;
-  border: 1px solid var(--primary);
-  -webkit-transition: 0.5s;
-  transition: 0.35s;
-  outline: none;
-}
-
-input {
-  height: 2rem;
-  margin-bottom: 0.6rem;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--primary);
-  font-family: 'Fira Sans', Helvetica, sans-serif;
-}
-
-input:focus,
-textarea:focus {
-  border: 1px solid var(--light);
-}
-
-textarea {
-  padding: 0.5rem;
 }
 
 button {
@@ -612,14 +558,14 @@ button:hover {
 
 @media only screen and (min-width: 767px) {
   #navbar {
-    display: flex;
+    display: block;
   }
   .header-container li {
     font-size: 0.8rem;
   }
   .home h1,
   .about h1,
-  .projects-header h1,
+  .projects h1,
   .skills h1,
   .contact h1 {
     font-size: 1.75rem;
@@ -656,9 +602,6 @@ button:hover {
   .project-item {
     width: 42vw;
   }
-  /* swiper-container {
-    padding-top: 10vh;
-  } */
   .project-thumbnail img {
     width: 12rem;
   }
@@ -670,7 +613,7 @@ button:hover {
     font-size: 1rem;
     line-height: 1.5rem;
     column-gap: 2rem;
-    width: 40vw;
+    width: 35vw;
   }
   .project-buttons {
     margin-top: 0.1rem;
@@ -704,21 +647,8 @@ button:hover {
   .contact-text p:last-of-type {
     padding: 2rem 0;
   }
-  .form-group label {
-    font-size: 1.2rem;
-  }
-  input, textarea {
-    width: 30rem;
-  }
-  input::placeholder,
-  textarea::placeholder {
-    font-size: 1rem;
-  }
-  .form-button {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    padding: 0.3rem 3.5rem;
-    margin-top: 1rem;
+  .footer-container {
+    height: 7vh;
   }
   .footer-links {
     width: 40vw;
@@ -760,10 +690,6 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  /* swiper-container {
-    padding: 1rem;
-    height: 70vh;
-  } */
   .skills {
     padding: 10rem 0;
   }
@@ -807,10 +733,6 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  /* swiper-container {
-    padding: 2vh;
-    height: 65vh;
-  } */
   .project-thumbnail img {
     width: 17rem;
   }
@@ -832,10 +754,6 @@ button:hover {
   .projects {
     padding-top: 10rem;
   }
-  /* swiper-container {
-    padding: 2rem;
-    height: 70vh;
-  } */
   .project-thumbnail img {
     width: 17rem;
   }
@@ -877,10 +795,6 @@ button:hover {
   .projects-header h1 {
     padding-top: 70%;
   }
-  /* swiper-container {
-    padding: 1vh;
-    height: 50vh;
-  } */
   .project-thumbnail img {
     width: 25rem;
   }
@@ -912,10 +826,6 @@ button:hover {
   .projects {
     padding-top: 0;
   }
-  /* swiper-container {
-    padding: 2vh;
-    height: 60vh;
-  } */
   .project-thumbnail img {
     width: 17rem;
   }
