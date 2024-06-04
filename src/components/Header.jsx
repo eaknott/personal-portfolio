@@ -19,12 +19,12 @@ function Header() {
       </div>
       <div id="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><ResumeButton className="resume" /></li>
+            <li className='nav-home'><a href="#home">Home</a></li>
+            <li className='nav-about'><a href="#about">About</a></li>
+            <li className='nav-projects'><a href="#projects">Projects</a></li>
+            <li className='nav-skills'><a href="#skills">Skills</a></li>
+            <li className='nav-contact'><a href="#contact">Contact</a></li>
+            <li className='nav-resume'><ResumeButton className="resume" /></li>
         </ul>
       </div>
       <div className="hamburger" onClick={toggleHamburgerMenu}>
