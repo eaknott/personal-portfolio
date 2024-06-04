@@ -3,7 +3,7 @@ import { SiJavascript, SiRedux, SiMongodb, SiTailwindcss, SiFirebase } from 'rea
 
 function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <header className="skills-text">
         <h1>Technical Skills</h1>
         <p>Here are a few of the technologies, libraries, and services that I've worked with recently. Feel free to <a href="https://www.linkedin.com/in/emilyaknott/" target="_blank" rel="noreferrer">check out my LinkedIn profile</a> for more details.</p>

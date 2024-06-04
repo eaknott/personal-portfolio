@@ -1,39 +1,48 @@
 import ProjectItem from "../components/ProjectItem"
-import houseMarketplaceThumbnail from '../assets/thumbnails/house-marketplace-thumbnail.jpg'
-import githubFinderThumbnail from '../assets/thumbnails/github-finder-thumbnail.jpg'
-import supportDeskThumbnail from '../assets/thumbnails/support-desk-thumbnail.jpg'
-import faqAccordionThumbnail from '../assets/thumbnails/faq-accordion-thumbnail.jpg'
-import drumMachineThumbnail from '../assets/thumbnails/drum-machine-thumbnail.jpg'
-import calculatorThumbnail from '../assets/thumbnails/calculator-thumbnail.jpg'
-import randomQuoteMachineThumbnail from '../assets/thumbnails/random-quote-machine-thumbnail.jpg'
-import productPreviewCardThumbnail from '../assets/thumbnails/product-preview-card-thumbnail.jpg'
-import sketchPadThumbnail from '../assets/thumbnails/sketch-pad-thumbnail.jpg'
+// import houseMarketplaceThumbnail from '../assets/thumbnails/house-marketplace-thumbnail.jpg'
+// import githubFinderThumbnail from '../assets/thumbnails/github-finder-thumbnail.jpg'
+// import supportDeskThumbnail from '../assets/thumbnails/support-desk-thumbnail.jpg'
+// import faqAccordionThumbnail from '../assets/thumbnails/faq-accordion-thumbnail.jpg'
+// import drumMachineThumbnail from '../assets/thumbnails/drum-machine-thumbnail.jpg'
+// import calculatorThumbnail from '../assets/thumbnails/calculator-thumbnail.jpg'
+// import randomQuoteMachineThumbnail from '../assets/thumbnails/random-quote-machine-thumbnail.jpg'
+// import productPreviewCardThumbnail from '../assets/thumbnails/product-preview-card-thumbnail.jpg'
+// import sketchPadThumbnail from '../assets/thumbnails/sketch-pad-thumbnail.jpg'
+import houseMarketplaceThumbnailWide from '../assets/thumbnails/house-marketplace-thumbnail-wide.jpg'
+import githubFinderThumbnailWide from '../assets/thumbnails/github-finder-thumbnail-wide.jpg'
+import supportDeskThumbnailWide from '../assets/thumbnails/support-desk-thumbnail-wide.jpg'
+import faqAccordionThumbnailWide from '../assets/thumbnails/faq-accordion-thumbnail-wide.jpg'
+import drumMachineThumbnailWide from '../assets/thumbnails/drum-machine-thumbnail-wide.jpg'
+import calculatorThumbnailWide from '../assets/thumbnails/calculator-thumbnail-wide.jpg'
+import randomQuoteMachineThumbnailWide from '../assets/thumbnails/random-quote-machine-thumbnail-wide.jpg'
+import productPreviewCardThumbnailWide from '../assets/thumbnails/product-preview-card-thumbnail-wide.jpg'
+import sketchPadThumbnailWide from '../assets/thumbnails/sketch-pad-thumbnail-wide.jpg'
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
         <div className="projects-header">
             <h1>My Projects</h1>
         </div>
 
         <main>
-          <swiper-container slides-per-view="1" space-between="20" scrollbar-clickable="true" mousewheel-invert="true" navigation="true">
-              <swiper-slide>
+          {/* <swiper-container slides-per-view="1" space-between="20" scrollbar-clickable="true" mousewheel-invert="true" navigation="true" loop="true">
+              <swiper-slide> */}
 
                 <ProjectItem 
-                thumbnail={houseMarketplaceThumbnail} 
+                thumbnail={houseMarketplaceThumbnailWide} 
                 title="House Marketplace App" 
                 alt="house marketplace app" 
                 liveUrl="https://house-marketplace-app-ochre.vercel.app/" 
                 codeUrl="https://github.com/eaknott/house-marketplace-app" 
-                technologies={["React", "Firebase Auth", "Geocoding API", "Firestore NoSQL", "Google OAuth"]}
+                technologies={["React", "Firebase/Firestore", "Geocoding API", "Google OAuth"]}
               />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={githubFinderThumbnail} 
+                  thumbnail={githubFinderThumbnailWide} 
                   title="GitHub Finder App" 
                   alt="github finder app" 
                   liveUrl="https://github-finder-app-navy-theta.vercel.app/" 
@@ -41,11 +50,11 @@ function Projects() {
                   technologies={["React", "GitHub API", "TailwindCSS", "DaisyUI"]}
                 />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={supportDeskThumbnail} 
+                  thumbnail={supportDeskThumbnailWide} 
                   title="Support Desk App" 
                   alt="support desk app" 
                   liveUrl="https://support-desk-app-yfbd.onrender.com/" 
@@ -53,11 +62,11 @@ function Projects() {
                   technologies={["MERN full-stack", "Redux", "React Router 6", "React Toastify"]}
                 />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={faqAccordionThumbnail} 
+                  thumbnail={faqAccordionThumbnailWide} 
                   title="FAQ Accordion" 
                   alt="FAQ accordion page" 
                   liveUrl="https://eaknott.github.io/faq-accordion/" 
@@ -65,11 +74,11 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={drumMachineThumbnail} 
+                  thumbnail={drumMachineThumbnailWide} 
                   title="Drum Machine" 
                   alt="drum machine app" 
                   liveUrl="https://eaknott.github.io/drum-machine/" 
@@ -77,11 +86,11 @@ function Projects() {
                   technologies={["React", "HTML", "CSS"]}
                 />
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={calculatorThumbnail} 
+                  thumbnail={calculatorThumbnailWide} 
                   title="Calculator" 
                   alt="calculator app" 
                   liveUrl="https://eaknott.github.io/calculator/" 
@@ -89,11 +98,11 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={randomQuoteMachineThumbnail} 
+                  thumbnail={randomQuoteMachineThumbnailWide} 
                   title="Random Quote Generator" 
                   alt="random quote generator" 
                   liveUrl="https://eaknott.github.io/random-quote-generator/" 
@@ -101,11 +110,11 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={productPreviewCardThumbnail} 
+                  thumbnail={productPreviewCardThumbnailWide} 
                   title="Product Preview Card" 
                   alt="product preview card" 
                   liveUrl="https://eaknott.github.io/product-preview-card-component/" 
@@ -113,11 +122,11 @@ function Projects() {
                   technologies={["HTML", "CSS"]}
                 />   
 
-              </swiper-slide>
-              <swiper-slide>
+              {/* </swiper-slide>
+              <swiper-slide> */}
 
                 <ProjectItem 
-                  thumbnail={sketchPadThumbnail} 
+                  thumbnail={sketchPadThumbnailWide} 
                   title="Sketch Pad" 
                   alt="sketch pad" 
                   liveUrl="https://eaknott.github.io/sketch-pad/" 
@@ -125,9 +134,9 @@ function Projects() {
                   technologies={["JavaScript", "HTML", "CSS"]}
                 />            
 
-              </swiper-slide>
+              {/* </swiper-slide>
 
-          </swiper-container>
+          </swiper-container> */}
           </main>
 
     </div>
