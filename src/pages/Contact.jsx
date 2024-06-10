@@ -6,7 +6,7 @@ function Contact() {
             <p>Contact me if you would like to say hello or learn more about my experience. You can send me an email or a message over LinkedIn. I will get back to you as soon as I can.</p>
         </section>
         <section className="contact-info">
-          <p>Reach me by email: <span className="contact-email">emilyknott.dev@gmail.com</span></p>
+          <p>Reach me by email: <span className="contact-email"><a href="mailto:emilyknott.dev@gmail.com">emilyknott.dev@gmail.com</a></span></p>
         </section>
         {/* <section>
           <form>
