@@ -4,7 +4,7 @@ import ekLogo from '../assets/ek-logo.svg'
 import ResumeButton from './ResumeButton'
 
 function Header() {
-  const [hamburgerOpen, setHamburgerOpen] = useState(true)
+  const [hamburgerOpen, setHamburgerOpen] = useState(false)
 
   const toggleHamburgerMenu = () => {
     setHamburgerOpen(!hamburgerOpen)
