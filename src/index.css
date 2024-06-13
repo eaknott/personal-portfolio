@@ -722,6 +722,7 @@ button:hover {
   align-items: center;
   position: fixed;
   bottom: 0;
+  z-index: 5;
 }
 
 .footer-links {
@@ -1200,7 +1201,7 @@ button:hover {
     letter-spacing: 0.05rem;
   }
   .project-thumbnail img {
-    width: 25rem;
+    width: 15rem;
   }
   .project-description {
     margin-top: 2rem;
