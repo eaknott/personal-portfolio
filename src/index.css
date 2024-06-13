@@ -633,12 +633,6 @@ swiper-slide {
   padding: 8rem 0;
 }
 
-.contact-text,
-.contact-info {
-  text-align: center;
-  max-width: 85vw;
-}
-
 .contact h1 {
   color: var(--light);
   letter-spacing: 0.09rem;
@@ -662,13 +656,12 @@ swiper-slide {
   opacity: 70%;
 }
 
-.contact p {
+.contact-text p {
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--tertiary);
   letter-spacing: 0.075rem;
   text-align: left;
-  width: 80vw;
 }
 
 .contact-text p {
@@ -676,7 +669,6 @@ swiper-slide {
 }
 
 .contact-info {
-  border-top: 2px solid var(--secondary);
   padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
@@ -688,8 +680,14 @@ swiper-slide {
 }
 
 .contact-email a {
+  text-decoration: none;
+  color: #eee;
+  font-family: 'Fira Code', Courier, monospace;
+  padding-left: 10px;
+}
+
+.contact-email a:hover {
   text-decoration: underline;
-  color: var(--light);
 }
 
 button {
