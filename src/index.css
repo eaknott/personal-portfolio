@@ -900,8 +900,8 @@ button:hover {
   }
   .featured-header {
     font-family: "Fira Code", Courier, monospace;
-    font-weight: 300;
-    font-size: 0.5rem;
+    font-weight: 400;
+    font-size: 0.55rem;
     margin-top: -10px;
   }
   .featured-title {
@@ -930,7 +930,8 @@ button:hover {
     margin-top: 0.8rem;
   }
   .featured-technologies p {
-    font-size: 0.5rem;
+    font-weight: 400;
+    font-size: 0.55rem;
   }
   .featured-buttons {
     display: flex;
@@ -1051,11 +1052,23 @@ button:hover {
   .projects-header::after {
     width: 40rem;
   }
+  .featured-header {
+    font-size: 0.55rem;
+    font-weight: 400;
+  }
+  .featured-technologies p {
+    font-weight: 400;
+    font-size: 0.55rem;
+  }
   .featured-project {
     width: 65vw;
   }
   .featured-desc {
     font-size: 0.65rem;
+  }
+  .featured-technologies p {
+    font-weight: 400;
+    font-size: 0.55rem;
   }
   .project-item {
     width: 22rem;
@@ -1181,11 +1194,29 @@ button:hover {
     width: 52rem;
     top: 69%;
   }
+  .featured-project {
+    margin: 6rem;
+  }
+  .ft1 img,
+  .ft2 img,
+  .ft3 img {
+  width: 25rem;
+  }
+  .ft1,
+  .ft3 {
+    left: 2rem;
+    top: -4.5rem;
+  }
+  .ft2 {
+    right: 2rem;
+    top: -3.25rem;
+  }
   .featured-title {
     font-size: 1.2rem;
   }
   .featured-desc {
     font-size: 0.8rem;
+    width: 30rem;
   }
   .featured-technologies p {
     font-size: 0.65rem;
