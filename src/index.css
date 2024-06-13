@@ -7,6 +7,7 @@
   --primary: #0B132B;
   --light: #C8B8DB;
   --tertiary: #EEE1B3;
+  --periwinkleBlue: #6667AB;
 }
 
 * {
@@ -283,8 +284,6 @@ body, html {
 
 .projects {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: 8rem;
   margin-bottom: 20vh;
 }
@@ -293,6 +292,8 @@ body, html {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-header h1 {
@@ -335,6 +336,130 @@ swiper-slide {
   padding-top: 0.4rem;
 } */
 
+.featured-project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80vw;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 200px;
+  margin: 3rem auto;
+  position: relative;
+}
+
+.featured-project-text {
+  z-index: 3;
+  padding-top: 3rem;
+}
+/* first and third featured projects */
+.fp1, .fp3 {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+/* second featured project */
+.fp2 {
+  text-align: left;
+}
+
+.featured-technologies p {
+  color: var(--tertiary);
+  font-weight: 100;
+  font-size: 0.6rem;
+}
+/* first and third featured project's technologies */
+.fp1 .featured-technologies,
+.fp3 .featured-technologies {
+  justify-content: flex-end;
+}
+/* featured thumbnail positioning */
+.ft1, .ft2, .ft3 {
+  position: absolute;
+}
+
+/* featured thumbnail image properties */
+.ft1 img,
+.ft2 img,
+.ft3 img {
+  border-radius: 5px;
+  width: 20rem;
+  opacity: 10%;
+}
+/* feature thumbnail hover design */
+.ft1 img:hover,
+.ft2 img:hover,
+.ft3 img:hover {
+  opacity: 80%;
+}
+/* feature thumbnail active design */
+.ft1 img:active,
+.ft2 img:active,
+.ft3 img:active {
+  opacity: 50%;
+}
+
+.featured-header {
+  font-family: "Fira Code", Courier, monospace;
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+
+.featured-title {
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+}
+
+.featured-project-text a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.featured-desc {
+  color: #fff;
+  font-size: 0.60rem;
+  font-weight: 200;
+  background-color: var(--periwinkleBlue);
+  padding: 0.5rem;
+  width: 70vw;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+}
+
+.featured-technologies {
+  font-family: 'Fira Code', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.featured-technologies p {
+  font-size: 0.5rem;
+}
+
+.featured-buttons {
+  display: flex;
+  column-gap: 0.7rem;
+}
+
+.featured-buttons button {
+  font-size: 0.6rem;
+  padding: 0.2rem 01rem;
+}
+/* first and third featured project buttons */
+.fp1 .featured-buttons,
+.fp3 .featured-buttons {
+  justify-content: flex-end;
+}
+
+.other-projects-header {
+  margin: 6rem auto 1rem auto;
+  font-size: 1.2rem;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 .project-item {
   display: flex;
   flex-direction: column;
@@ -343,8 +468,8 @@ swiper-slide {
   height: 20rem;
   background-color: var(--secondary);
   border-radius: 10px;
-  padding: 7px;
-  max-width: 80vw;
+  padding: 6px;
+  max-width: 75vw;
 }
 
 .project-thumbnail img {
@@ -707,8 +832,121 @@ button:hover {
     width: 28rem;
     top: 17%;
   }
+  .featured-project {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+    width: 80vw;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 200px;
+    margin: 3.5rem auto;
+    position: relative;
+  }
+  .featured-project-text {
+    z-index: 3;
+    padding-top: 0;
+  }
+  .fp1 .featured-project-text, 
+  .fp3 .featured-project-text {
+    margin-left: auto;
+  }
+  .fp2 .featured-project-text {
+    margin-right: auto;
+  }
+  .fp1, .fp3 {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .fp2 {
+    text-align: left;
+  }
+  .featured-technologies p {
+    color: var(--tertiary);
+    font-weight: 100;
+    font-size: 0.6rem;
+  }
+  .fp1 .featured-technologies,
+  .fp3 .featured-technologies {
+    justify-content: flex-end;
+  }
+  .ft1, .ft2, .ft3 {
+    position: absolute;
+  }
+  .ft1,
+  .ft3 {
+    left: 2rem;
+    top: -2.5rem;
+  }
+  .ft2 {
+    right: 2rem;
+    top: -1.25rem;
+  }
+  .ft1 img,
+  .ft2 img,
+  .ft3 img {
+    border-radius: 5px;
+    width: 20rem;
+    opacity: 40%;
+  }
+  .ft1 img:hover,
+  .ft2 img:hover,
+  .ft3 img:hover {
+    opacity: 80%;
+  }
+  .ft1 img:active,
+  .ft2 img:active,
+  .ft3 img:active {
+    opacity: 50%;
+  }
+  .featured-header {
+    font-family: "Fira Code", Courier, monospace;
+    font-weight: 300;
+    font-size: 0.5rem;
+    margin-top: -10px;
+  }
+  .featured-title {
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+  }
+  .featured-project-text a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .featured-desc {
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 300;
+    background-color: var(--periwinkleBlue);
+    padding: 0.5rem;
+    width: 25rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    line-height: 1rem;
+  }
+  .featured-technologies {
+    font-family: 'Fira Code', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    margin-top: 0.8rem;
+  }
+  .featured-technologies p {
+    font-size: 0.5rem;
+  }
+  .featured-buttons {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+  .featured-buttons button {
+    font-size: 0.5rem;
+    padding: 0.2rem 1rem;
+  }
+  .fp1 .featured-buttons,
+  .fp3 .featured-buttons {
+    justify-content: flex-end;
+  }  
   .project-item {
-    width: 42vw;
+    width: 40vw;
   }
   .project-thumbnail img {
     width: 12rem;
@@ -726,6 +964,7 @@ button:hover {
   .project-buttons {
     margin-top: 0.1rem;
     column-gap: 1rem;
+    width: 40vw;  
   }
   .project-buttons button {
     text-transform: uppercase;
@@ -812,6 +1051,16 @@ button:hover {
   }
   .projects-header::after {
     width: 40rem;
+  }
+  .featured-project {
+    width: 65vw;
+  }
+  .featured-desc {
+    font-size: 0.65rem;
+  }
+  .project-item {
+    width: 22rem;
+    height: 25rem;
   }
   .skills {
     padding: 10rem 0;
@@ -932,6 +1181,25 @@ button:hover {
   .projects-header::after {
     width: 52rem;
     top: 69%;
+  }
+  .featured-title {
+    font-size: 1.2rem;
+  }
+  .featured-desc {
+    font-size: 0.8rem;
+  }
+  .featured-technologies p {
+    font-size: 0.65rem;
+    margin-top: -5px;
+  }
+  .featured-buttons button {
+    font-size: 0.65rem;
+    margin-top: 7px;
+  }
+  .other-projects-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
   }
   .project-thumbnail img {
     width: 25rem;
