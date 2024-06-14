@@ -474,16 +474,17 @@ swiper-slide {
 
 .project-thumbnail img {
   border-radius: 10px;
-  box-shadow: 3px 3px 10px #bbbbbb;
+  box-shadow: 2px 2px 5px var(--periwinkleBlue);
   width: 12rem;
 }
 
 .project-thumbnail img:hover {
-  box-shadow: 3px 3px 10px var(--light);
+  box-shadow: 2px 2px 5px var(--light);
 }
 
 .project-thumbnail img:active {
-  box-shadow: 1px 1px 10px var(--light);
+  /* box-shadow: 1px 1px 10px var(--light); */
+  box-shadow: none;
   transform: translate(2px, 2px);
 }
 
