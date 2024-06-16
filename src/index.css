@@ -839,7 +839,7 @@ button:hover {
     width: 80vw;
     border-radius: 10px;
     padding: 2rem;
-    height: 200px;
+    height: 230px;
     margin: 3.5rem auto;
     position: relative;
   }
@@ -876,11 +876,11 @@ button:hover {
   .ft1,
   .ft3 {
     left: 2rem;
-    top: -2.5rem;
+    top: -1.5rem;
   }
   .ft2 {
     right: 2rem;
-    top: -1.25rem;
+    top: -0.5rem;
   }
   .ft1 img,
   .ft2 img,
@@ -903,7 +903,7 @@ button:hover {
     font-family: "Fira Code", Courier, monospace;
     font-weight: 400;
     font-size: 0.55rem;
-    margin-top: -10px;
+    margin-top: 0;
   }
   .featured-title {
     font-family: 'Fira Sans', Helvetica, sans-serif;
@@ -914,7 +914,7 @@ button:hover {
   }
   .featured-desc {
     color: #fff;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 300;
     background-color: var(--periwinkleBlue);
     padding: 0.5rem;
@@ -1065,7 +1065,7 @@ button:hover {
     width: 65vw;
   }
   .featured-desc {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
   .featured-technologies p {
     font-weight: 400;
@@ -1206,11 +1206,11 @@ button:hover {
   .ft1,
   .ft3 {
     left: 2rem;
-    top: -4.5rem;
+    top: -3.5rem;
   }
   .ft2 {
     right: 2rem;
-    top: -3.25rem;
+    top: -2.5rem;
   }
   .featured-title {
     font-size: 1.2rem;
@@ -1291,6 +1291,17 @@ button:hover {
   }
   .projects {
     padding-top: 0;
+  }
+  .featured-project {
+    width: 60rem;
+  }
+  .featured-desc {
+    font-size: .95rem;
+    width: 40rem;
+    line-height: 1.3rem;
+  }
+  .other-projects-header {
+    font-size: 1.7rem;
   }
   .skills p,
   .skills-body {
