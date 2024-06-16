@@ -167,12 +167,11 @@ body, html {
 /* HOME PAGE */
 
 .home {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 10vh;
   animation-duration: 0.75s;
   animation-delay: 1s;
   animation-name: animate-fade-up;
@@ -182,7 +181,7 @@ body, html {
 
 .home-text .intro {
   font-family: 'Fira Code', Courier, monospace;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .home-text {
@@ -193,7 +192,7 @@ body, html {
 }
 
 .home h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   color: var(--light);
   letter-spacing: 0.09rem;
   font-family: 'Fira Sans', Helvetica, sans-serif;
@@ -266,14 +265,59 @@ body, html {
   opacity: 70%;
 }
 
-.about p {
-  font-size: 1.5rem;
+.about-main main {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-first-section,
+.about-third-section,
+.about-last-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-second-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.about-fourth-section {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+  gap: 1.5rem;
+}
+
+.about-first-section img {
+  width: 80vw;
+  border-radius: 5px;
+  border: 2px solid var(--light);
+}
+
+.about-second-section img,
+.about-fourth-section img {
+  width: 8rem;
+  border-radius: 5px;
+  border: 2px solid var(--light);
+}
+
+.about-first-text,
+.about-second-text {
   text-align: left;
-  line-height: 1.5rem;
-  color: var(--tertiary);
+  font-family: "Overpass", Arial, sans-serif;
+}
+
+.about p {
+  color: var(--light);
   letter-spacing: 0.075rem;
-  width: 70vw;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 /* .about-text main {
@@ -406,6 +450,7 @@ swiper-slide {
 
 .featured-title {
   font-family: 'Fira Sans', Helvetica, sans-serif;
+  font-size: 1.1rem;
 }
 
 .featured-project-text a {
@@ -415,7 +460,7 @@ swiper-slide {
 
 .featured-desc {
   color: #fff;
-  font-size: 0.60rem;
+  font-size: 0.75rem;
   font-weight: 200;
   background-color: var(--periwinkleBlue);
   padding: 0.5rem;
@@ -631,7 +676,7 @@ swiper-slide {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0;
+  padding: 8rem 2rem;
 }
 
 .contact h1 {
@@ -684,7 +729,6 @@ swiper-slide {
   text-decoration: none;
   color: #eee;
   font-family: 'Fira Code', Courier, monospace;
-  padding-left: 10px;
 }
 
 .contact-email a:hover {
@@ -816,6 +860,22 @@ button:hover {
   .about h1::after {
     width: 20rem;
     top: 80%;
+  }
+  .about-first-section {
+    align-items: center;
+  }
+  .about-second-section,
+  .about-fourth-section {
+    width: 60vw;
+  }
+  .about-first-section img {
+    width: 30vw;
+  }
+  .about-second-section img {
+    width: 20vw;
+  }
+  .about-fourth-section img {
+    width: 25vw;
   }
   .projects {
     padding-top: 10rem;
@@ -1040,6 +1100,19 @@ button:hover {
 /* DESKTOP */
 
 @media only screen and (min-width: 1024px) {
+  .home-text .intro {
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+  }
+  .home-text h1 {
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .home p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
   .about h1 {
     margin-top: 10rem;
   }
@@ -1107,12 +1180,10 @@ button:hover {
     flex-direction: row;
     margin: 2rem 0;
   }
-  .home h1 {
-    text-align: start;
-    margin: 2rem 3rem;
+  .home-text .intro {
+    padding-bottom: 1rem;
   }
   .home p {
-    text-align: start;
     width: 50vw;
   }
   .home-img img {
@@ -1163,20 +1234,17 @@ button:hover {
     flex-direction: row;
     margin: 2rem 0;
   }
+  .home-text .intro {
+    font-size: 1.2rem;
+  }
   .home h1 {
-    text-align: start;
-    margin: 2rem 3rem;
+    font-size: 2.5rem;
   }
   .home p {
-    text-align: start;
     width: 50vw;
     margin-left: 3rem;
-  }
-  .home-img img {
-    height: 15rem;
-    width: 15rem;
-    margin-top: 0;
-    margin-right: 3rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
   }
   .about h1 {
     margin-top: 5rem;
@@ -1184,6 +1252,12 @@ button:hover {
   .about h1::after {
     width: 40rem;
     top: 86%;
+  }
+  .about-second-section {
+    width: 40vw;
+  }
+  .about-fourth-section {
+    width: 45vw;
   }
   .projects {
     padding-top: 0;
