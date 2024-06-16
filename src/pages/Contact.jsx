@@ -3,7 +3,7 @@ function Contact() {
     <div className="contact" id="contact">
         <section className="contact-text">
             <h1>Get in Touch</h1>
-            <p>Contact me if you would like to say hello or learn more about my experience. You can send me an email or a message over LinkedIn. I will get back to you as soon as I can.</p>
+            <p>Contact me if you'd like to say hello or learn more about my experience. Don't hesitate to send me an email or a message over LinkedIn. Let's chat!</p>
         </section>
         <section className="contact-info">
           <p>Reach me by email: <span className="contact-email"><a href="mailto:emilyknott.dev@gmail.com">emilyknott.dev@gmail.com</a></span></p>
