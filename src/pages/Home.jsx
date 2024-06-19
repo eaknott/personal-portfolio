@@ -3,8 +3,9 @@ function Home() {
     <div className="home" id="home">
       <div className="home-text">
         <div className="intro">Hello, my name is </div>
-        <h1>Emily.</h1>
-        <p>I'm a frontend developer, animal lover, puzzle addict, and book nerd. If you made it this far, might as well scroll down ...</p>
+        <h1>Emily Knott.</h1>
+        <p>I'm a full-stack developer, specializing in <span>React</span> web applications. Currently, I'm focused on applications built with <span>Python</span> and using the <span>Django</span> framework and <span>PostgreSQL</span>.</p>
+        <a href="#projects"><button>Check out my portfolio!</button></a>
       </div>
     </div>
   )
