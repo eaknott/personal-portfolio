@@ -180,7 +180,6 @@ body, html {
   font-family: 'Fira Code', Courier, monospace;
   font-size: 0.95rem;
   font-weight: 200;
-  letter-spacing: 0.04rem;
   color: var(--tertiary);
 }
 
@@ -1126,7 +1125,6 @@ button:hover {
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 2rem;
-    width: 70vw;
   }
   .home-text span {
     font-weight: 400;
