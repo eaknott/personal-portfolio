@@ -1,15 +1,11 @@
-import ProfileImage from '../assets/IMG_8326 2.jpg'
-
 function Home() {
   return (
     <div className="home" id="home">
       <div className="home-text">
         <div className="intro">Hello, my name is </div>
-        <h1>Emily.</h1>
-        <p>I'm a frontend developer, animal lover, and avid learner. Welcome to my website! Keep scrolling to learn more ...</p>
-      </div>
-      <div className="home-img">
-        <img src={ProfileImage} alt="Headshot" />
+        <h1>Emily Knott.</h1>
+        <p>I'm a full-stack developer, specializing in <span>React</span> web applications. Currently, I'm focused on building applications with <span>Python</span> and the <span>Django</span> framework, using <span>PostgreSQL</span>.</p>
+        <a href="#projects"><button>Check out my portfolio!</button></a>
       </div>
     </div>
   )

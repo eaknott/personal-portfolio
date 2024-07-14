@@ -1,13 +1,18 @@
-import myCV from '../assets/EMILY_KNOTT_CV.jpg'
+import myCV from '../assets/Emily_Knott_CV.pdf';
 
 function ResumeButton() {
   return (
     <div>
-        <a href={myCV} className="resume-download" download="EMILY_ KNOTT_CV.jpg">
-            <button>Resume</button>
-        </a>
+      <a
+        href={myCV}
+        className='resume-download'
+        rel='noreferrer'
+        target='_blank'
+      >
+        <button>Resume</button>
+      </a>
     </div>
-  )
+  );
 }
 
-export default ResumeButton
+export default ResumeButton;
