@@ -567,6 +567,11 @@ body, html {
   font-size: 0.8rem;
 }
 
+.btn-live:hover,
+.btn-code:hover {
+  box-shadow: 3px 3px var(--light);
+}
+
 /* SKILLS PAGE */
 
 .skills {
