@@ -53,7 +53,7 @@ If you like this website and want to use something similar for yourself, you can
 
 ## Acknowledgments
 
-Author: [Emily Knott](www.emilyknott.com)
+Author: [Emily Knott](https://www.emilyknott.com)
 
 Although I did not fork or copy code here, much of the design for this website was inspired by [Brittany Chiang's portfolio website](https://v4.brittanychiang.com/). She made use of Gatsby.js, and her design is available for use:
 [Brittany Chiang's v4 GitHub](https://github.com/bchiang7/v4).
