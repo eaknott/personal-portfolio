@@ -55,6 +55,7 @@ function Hamburger({ isOpen }) {
                     position: absolute;
                     right: 0;
                     margin-right: 0;
+                    margin-top: 1rem;
                     padding-top: 2.4rem;
                     line-height: 2rem;
                 }

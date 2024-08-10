@@ -258,18 +258,7 @@ body, html {
   font-size: 1.5rem;
   padding-top: 10%;
   position: relative;
-}
-
-.about h1::after {
-  content: "";
-  display: block;
-  height: 0.1px;
-  width: 70px;
-  position: absolute;
-  top: 75%;
-  right: 0;
-  background: var(--light);
-  opacity: 70%;
+  font-family: 'Fira Code', Courier, monospace;
 }
 
 .about-main main {
@@ -345,23 +334,13 @@ body, html {
   margin-left: 10vw;
   font-size: 1.5rem;
   width: 80vw;
+  font-family: 'Fira Code', Courier, monospace;
+
 }
 
 .projects-header {
   margin-right: auto;
   position: relative;
-}
-
-.projects-header::after {
-  content: "";
-  display: block;
-  height: 0.1px;
-  width: 160px;
-  position: absolute;
-  top: 25%;
-  right: 0;
-  background: var(--light);
-  opacity: 70%;
 }
 
 .featured-project {
@@ -599,18 +578,7 @@ body, html {
   font-size: 1.5rem;
   position: relative;
   width: 80vw;
-}
-
-.skills h1::after {
-  content: " ";
-  display: block;
-  height: 0.1px;
-  width: 100px;
-  position: absolute;
-  top: 75%;
-  right: 0;
-  background: var(--light);
-  opacity: 70%;
+  font-family: 'Fira Code', Courier, monospace;
 }
 
 .skills p {
@@ -678,18 +646,7 @@ body, html {
   position: relative;
   width: 80vw;
   text-align: left;
-}
-
-.contact h1::after {
-  content: " ";
-  display: inline;
-  height: 0.1px;
-  width: 140px;
-  position: absolute;
-  top: 75%;
-  right: 0;
-  background: var(--light);
-  opacity: 70%;
+  font-family: 'Fira Code', Courier, monospace;
 }
 
 .contact-text p {
@@ -855,10 +812,6 @@ button:hover {
     margin-top: 10rem;
     margin-bottom: 3rem;
   }
-  .about h1::after {
-    width: 20rem;
-    top: 80%;
-  }
   .aquarium-image {
     width: 40vw;
   }
@@ -875,10 +828,6 @@ button:hover {
   }
   .projects-header {
     padding-bottom: 5%;
-  }
-  .projects-header::after {
-    width: 28rem;
-    top: 17%;
   }
   .featured-project {
     display: flex;
@@ -1021,10 +970,6 @@ button:hover {
   .skills-text {
     margin-bottom: 6rem;
   }
-  .skills h1::after {
-    width: 23rem;
-    top: 83%;
-  }
   .skills p {
     width: 75vw;
     margin-bottom: 2rem;
@@ -1034,10 +979,6 @@ button:hover {
   }
   .contact {
     padding: 10rem 0;
-  }
-  .contact h1::after {
-    width: 26rem;
-    top: 82%;
   }
   .contact-text {
     max-width: 75vw;
@@ -1106,10 +1047,6 @@ button:hover {
   .about h1 {
     margin-top: 10rem;
   }
-  .about h1::after {
-    width: 30rem;
-    top: 85%;
-  }
   .aquarium-image {
     width: 40vw;
   }
@@ -1125,9 +1062,6 @@ button:hover {
   }
   .projects {
     padding-top: 0;
-  }
-  .projects-header::after {
-    width: 40rem;
   }
   .featured-header {
     font-size: 0.55rem;
@@ -1154,16 +1088,8 @@ button:hover {
   .skills {
     padding: 10rem 0;
   }
-  .skills h1::after {
-    width: 36rem;
-    top: 85%;
-  }
   .contact {
     padding: 10rem 0;
-  }
-  .contact h1::after {
-    width: 39rem;
-    top: 85%;
   }
   .resume-download button {
     font-size: 1.5rem;
@@ -1240,19 +1166,11 @@ button:hover {
   .about h1 {
     margin-top: 5rem;
   }
-  .about h1::after {
-    width: 40rem;
-    top: 86%;
-  }
   .projects {
     padding-top: 0;
   }
   .projects-header h1 {
     padding-top: 20%;
-  }
-  .projects-header::after {
-    width: 52rem;
-    top: 69%;
   }
   .featured-project {
     margin: 6rem;
@@ -1303,16 +1221,8 @@ button:hover {
   .skills {
     padding-top: 5rem;
   }
-  .skills h1::after {
-    width: 48rem;
-    top: 88%;
-  }
   .contact {
     padding: 5rem 0 8rem 0;
-  }
-  .contact h1::after {
-    width: 51rem;
-    top: 88%;
   }
   .resume-download button {
     font-size: 1.5rem;
